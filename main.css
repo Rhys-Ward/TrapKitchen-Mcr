@@ -9,6 +9,7 @@ body {
   height: 844px;
   background-color: aqua;
   overflow-x: hidden;
+  color: white;
 }
 
 .overlay {
@@ -162,19 +163,24 @@ body {
   transform: rotateX(4deg) rotateY(0deg);
   transform-style: preserve-3d;
 }
-
+/* ! FULLSCREEN */
 @media screen and (min-width: 1000px) and (max-width: 1600px) {
   body {
-    width: 100wv;
+    width: 1080px;
     height: 100vh;
+    color: white;
   }
   nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: grey;
+    background-color: black;
     width: 100%;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
   }
   .nav-links {
     display: flex;
@@ -183,7 +189,7 @@ body {
     border: 2px solid green;
     flex-direction: row;
     top: 0px;
-    height: 8vh;
+    height: 100%;
     transform: translateX(0%);
     transition: none;
   }
@@ -193,5 +199,29 @@ body {
   .nav-links li {
     list-style: none;
     opacity: 100;
+  }
+
+  .mobileNum::before {
+    content: "07399 180779";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+  }
+
+  .mobileNumBox {
+    position: absolute;
+    border: 2px solid rgba(255, 255, 255, 0.836);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: 3px;
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    height: 85%;
   }
 }
