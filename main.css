@@ -35,7 +35,7 @@ body {
     transform: translateX(0em);
   }
   to {
-    transform: translateX(-100em);
+    transform: translateX(-150em);
   }
 }
 
@@ -163,8 +163,12 @@ body {
   transform: rotateX(4deg) rotateY(0deg);
   transform-style: preserve-3d;
 }
+i {
+  color: white;
+  font-size: 1.5rem;
+}
 /* ! FULLSCREEN */
-@media screen and (min-width: 1000px) and (max-width: 1600px) {
+@media screen and (min-width: 1000px) {
   body {
     width: 1080px;
     height: 100vh;
