@@ -76,6 +76,7 @@ body {
   /* border: 2px solid red; */
   padding: 5px;
 }
+
 .nav-links a {
   text-decoration: none;
   letter-spacing: 3px;
@@ -272,7 +273,7 @@ i {
     font-size: 1.5rem;
   }
   .Logo {
-    z-index: 100;
+    height: 8vh;
   }
   .nav-socials {
     display: flex;
