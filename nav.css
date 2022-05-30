@@ -61,7 +61,6 @@ body {
 .nav-links {
   display: flex;
   position: absolute;
-  /* border: 3px solid blue; */
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0px;
