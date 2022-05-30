@@ -2,16 +2,17 @@
 const navSlide = () => {
   const burger = document.querySelector(".burger");
 
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
+  const nav = document.querySelector(".nav-socials");
+  const navSocials = document.querySelectorAll(".nav-socials li");
 
   burger.addEventListener("click", () => {
     // toggle nav slider
+
     nav.classList.toggle("nav-active");
     // burger animation
     burger.classList.toggle("toggle");
     // animate links
-    navLinks.forEach((link, index) => {
+    navSocials.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = "";
       } else {
