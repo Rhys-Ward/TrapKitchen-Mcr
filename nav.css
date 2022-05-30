@@ -12,8 +12,6 @@ body {
   color: white;
 }
 .container {
-  /* width: 390px; */
-  /* height: 844px; */
   max-width: 576px;
   height: 100vh;
   background-color: black;
@@ -51,10 +49,9 @@ body {
 /* ! NAV */
 .nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   min-height: 8vh;
-  /* border: 2px solid red; */
   position: fixed;
   z-index: 100;
   top: 0px;
@@ -64,26 +61,33 @@ body {
 .nav-links {
   display: flex;
   position: absolute;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
   flex-direction: column;
   justify-content: space-between;
   padding: 20px 0px;
   align-items: center;
-  width: 25%;
+  width: 35%;
   transform: translateX(100%);
-  right: 1%;
-  height: 40vh;
-  top: 5vh;
+  right: 0%;
+  height: 100vh;
+  top: 0vh;
   transition: transform 0.5s ease-in;
-  background-color: rgba(128, 128, 128, 0.366);
+  background-color: rgba(128, 128, 128, 0.527);
+}
+.nav-menuBox {
+  margin-top: 15%;
+  height: 35%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 .nav-menu {
-  border: 2px solid red;
   padding: 5px;
 }
 .nav-menu a {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .nav-links a {
@@ -96,10 +100,11 @@ body {
   margin: 2px;
 }
 .icon-container {
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   flex-direction: row;
 }
+
 .footer {
   width: 100vw;
   height: 10vw;
@@ -174,15 +179,15 @@ body {
 .mobileNumBox {
   position: relative;
   border: 2px solid rgba(252, 252, 252, 0.836);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: 2px;
+  margin-bottom: 15%;
   padding: 2px;
   display: flex;
   align-items: center;
   transition: transform 0.5s ease-in;
   width: 100%;
+}
+.mobileNum p a {
+  color: white;
 }
 /* ?nav end */
 /* ////////////////// */
@@ -230,8 +235,11 @@ i {
   color: white;
   font-size: 1.5rem;
 }
+i:hover {
+  color: red;
+}
 .logo {
-  display: none;
+  height: 8vh;
 }
 
 .footer {
@@ -242,15 +250,13 @@ i {
 /* ! FULLSCREEN */
 @media screen and (min-width: 1000px) {
   .container {
-    border: 2px dotted blue;
-
     min-width: 100vw;
     height: 100vh;
     color: white;
   }
+
   nav {
     position: fixed;
-    border: 2px solid rgb(28, 117, 219);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -263,10 +269,8 @@ i {
     color: white;
   }
   .nav-links {
-    /* flex-direction: column-reverse; */
     position: relative;
     display: flex;
-
     align-items: center;
     width: 100%;
     top: 0px;
@@ -280,19 +284,24 @@ i {
     display: flex;
   }
   .nav-menuBox {
-    width: 40%;
+    width: 50%;
     height: 8vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+    margin: 0px;
   }
   .nav-menu {
     font-size: 1.1rem;
     font-family: "Kanit", sans-serif;
   }
+  .nav-menu a {
+    font-size: 1.3rem;
+  }
 
   .nav-menu a:hover {
-    color: rgb(96, 96, 96);
+    color: red;
   }
 
   .nav-socials {
@@ -300,19 +309,16 @@ i {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    /* border: 2px solid black; */
     height: 8vh;
     width: 30%;
     margin-right: 5px;
   }
   .nav-socials li {
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
   }
   .icon-container {
-    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     width: 40%;
@@ -388,7 +394,6 @@ i {
   }
   nav {
     position: fixed;
-    border: 2px solid rgb(28, 219, 114);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -399,13 +404,12 @@ i {
   .nav a {
     text-decoration: none;
     color: white;
-    border: 2px solid orange;
   }
   .nav-links {
     /* flex-direction: column-reverse; */
     position: relative;
     display: flex;
-    border: 2px solid blue;
+
     align-items: center;
     width: 100%;
     top: 0px;
@@ -419,16 +423,22 @@ i {
     display: flex;
   }
   .nav-menuBox {
-    border: 2px solid brown;
-    width: 50%;
+    width: 70%;
     height: 8vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 10px;
+    flex-direction: row;
+    margin: 0px;
   }
   .nav-menu {
     font-size: 1.1rem;
     font-family: "Kanit", sans-serif;
+  }
+  .nav-menu a {
+    margin: 0px 5px;
+    font-size: 1.2rem;
   }
 
   .nav-menu a:hover {
@@ -440,19 +450,16 @@ i {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
     height: 8vh;
     width: 40%;
     margin-right: 5px;
   }
   .nav-socials li {
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
   }
   .icon-container {
-    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     width: 40%;
@@ -528,7 +535,6 @@ i {
   }
   nav {
     position: fixed;
-    border: 2px solid rgb(28, 219, 114);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -539,13 +545,11 @@ i {
   .nav a {
     text-decoration: none;
     color: white;
-    border: 2px solid orange;
   }
   .nav-links {
-    /* flex-direction: column-reverse; */
     position: relative;
     display: flex;
-    border: 2px solid blue;
+
     align-items: center;
     width: 100%;
     top: 0px;
@@ -559,16 +563,20 @@ i {
     display: flex;
   }
   .nav-menuBox {
-    border: 2px solid brown;
-    width: 60%;
+    width: 50%;
     height: 8vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: row;
+    margin: 0px;
   }
   .nav-menu {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: "Kanit", sans-serif;
+  }
+  .nav-menu a {
+    font-size: 1rem;
   }
 
   .nav-menu a:hover {
@@ -580,19 +588,16 @@ i {
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
     height: 8vh;
     width: 40%;
     margin-right: 5px;
   }
   .nav-socials li {
-    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     justify-content: center;
   }
   .icon-container {
-    /* border: 2px solid green; */
     display: flex;
     justify-content: center;
     width: 40%;
@@ -611,14 +616,13 @@ i {
 
   .mobileNum::after {
     background-color: red;
-
+    top: 0;
+    right: 0;
+    bottom: 0;
     content: "";
     z-index: -1;
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 400ms ease-in-out;
@@ -640,10 +644,9 @@ i {
 
   .mobileNumBox {
     position: relative;
-    border: 2px solid rgba(255, 255, 255, 0.836);
-    top: 0;
-    right: 0;
-    bottom: 0;
+    border: 2px solid red;
+    /* border: 2px solid rgba(255, 255, 255, 0.836); */
+
     width: 100%;
     margin: 3px;
     padding: 5px;
