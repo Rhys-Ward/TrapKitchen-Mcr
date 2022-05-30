@@ -2,8 +2,8 @@
 const navSlide = () => {
   const burger = document.querySelector(".burger");
 
-  const nav = document.querySelector(".nav-socials");
-  const navSocials = document.querySelectorAll(".nav-socials li");
+  const nav = document.querySelector(".nav-links");
+  const navSocials = document.querySelectorAll(".nav-links li");
 
   burger.addEventListener("click", () => {
     // toggle nav slider
