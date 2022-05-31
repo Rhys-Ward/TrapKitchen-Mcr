@@ -716,3 +716,32 @@ i:hover {
   z-index: 2;
   color: white;
 }
+
+.svg{
+  position: absolute;
+  z-index: 100;
+  animation: colorchange 5s infinite alternate;
+}
+
+.s0:hover{
+ stroke: red;
+ filter: drop-shadow( 0 0 7px #fff,
+ 0 0 10px #fff,
+ 0 0 21px #fff,
+ 0 0 42px #0fa,
+ 0 0 82px #0fa,
+ 0 0 92px #0fa,
+ 0 0 102px #0fa,
+ 0 0 151px #0fa);
+
+   
+/* animation: colorchange 5s infinite alternate; */
+}
+
+@keyframes colorchange {
+  0%{ stroke-dasharray: 0 50%;}
+  100%{
+    stroke-dasharray: 0 50%;
+  }
+  
+}
