@@ -8,23 +8,12 @@
 
     /* padding-top: 591.44px / 1127.34px * 100%; */
   }
-  /* !VID */
-  video {
-    border: 2px dotted red;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    
-      clip-path: url(#clipPath);
-  }
-  
-  }
+
   /* !address */
   .address-container {
     /* border: 2px solid red; */
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     right: 5%;
     z-index: 2;
     display: flex;
@@ -53,7 +42,7 @@
     position: absolute;
     z-index: 2;
     font-family: "Kanit", sans-serif;
-    bottom: 15%;
+    bottom: 5%;
     left: 5%;
     cursor: pointer;
     display: flex;
@@ -71,20 +60,111 @@
   }
   /* ! SVG vidline animation */
 
-  .svgContainer {
+  .svgContainer1 {
     width: 100%;
-    height: 50%;
+    height: 100%;
     position: absolute;
-    z-index: 5;
-    border: 2px solid blue;
-    /* overflow: hidden; */
+    z-index: 2;
+    /* border: 2px solid blue; */
+    overflow: hidden;
   }
-  .vidLine {
+  .svgContainer2 {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    z-index: 2;
+    /* border: 2px solid purple; */
+    bottom: 0;
+    overflow: hidden;
+  }
+
+  /* !VID */
+  .video-container {
+    /* object-fit: cover; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* border-left: 2px solid black; */
+  }
+  .videobg {
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    border-left: 5px solid black;
+    width: 100%;
+    height: 97%;
+    clip-path: polygon(
+      50% 0,
+      80% 10%,
+      100% 10%,
+      100% 70%,
+      100% 90%,
+      51% 90%,
+      20% 90%,
+      0 100%,
+      0 0,
+      22% 0
+    );
+    bottom: 3.5%;
+  }
+  .videobg2 {
+    position: absolute;
+    z-index: 1;
+    /* !dont delete this bg */
+    background-color: black;
+    width: 100%;
+    height: 99%;
+
+    bottom: 2%;
+    animation: vidbg 1s ease forwards;
+    animation-delay: 3.5s;
+  }
+
+  @keyframes vidbg {
+    0% {
+      right: 0;
+    }
+
+    100% {
+      right: 100%;
+    }
+  }
+  video {
+    border-left: 1px solid black;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 95%;
+    z-index: 1;
+    clip-path: polygon(
+      50% 0,
+      80% 10%,
+      100% 10%,
+      100% 70%,
+      100% 90%,
+      51% 90%,
+      20% 90%,
+      0 100%,
+      0 0,
+      22% 0
+    );
+    animation: vidFade 3s ease-in forwards;
+  }
+  @keyframes vidFade {
+    0% {
+      opacity: 30%;
+    }
+
+    100% {
+      opacity: 100%;
+    }
+  }
+
+  .vidLine1 .vidLine2 {
     width: auto;
     height: auto;
-    /* border: 2px solid red; */
   }
- 
+
   #topline {
     stroke-dasharray: 662.3141479492188;
     stroke-dashoffset: 662.3141479492188;
