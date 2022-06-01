@@ -5,48 +5,73 @@
     padding-left: 2%;
   }
   .mains-container {
-    border: blue solid 2px;
     display: flex;
     flex-direction: column;
+    height: 50%;
+    position: absolute;
+    margin-top: 20%;
   }
   .mains-items-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .mains-item {
-    border: yellow dotted 2px;
     height: 90%;
-    width: 30%;
+    width: 50%;
     margin: 2% 5%;
+  }
+  .mains-container2 {
+    display: flex;
+  }
+
+  .menu-headings {
+    display: flex;
+  }
+
+  .menu-headings h3 {
+    margin: 2%;
+    cursor: pointer;
+  }
+  .menu-headings h3:hover {
+    cursor: pointer;
+    border-left: red solid 2px;
   }
 
   .sides-container {
-    border: orange solid 2px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
   .side-items-container {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .sides-container2 {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .sides-item {
-    border: purple solid 2px;
     height: 30%;
     width: 20%;
   }
 
   .drinks-container {
-    border: blue 2px solid;
   }
   .drinks-items-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .drinks-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .drinks-item {
-    border: yellow solid 2px;
     height: 10%;
     width: 20%;
+    margin: 2%;
   }
 }

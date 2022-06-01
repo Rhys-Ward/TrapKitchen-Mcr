@@ -25,10 +25,6 @@ const navSlide = () => {
   });
 };
 
-// !all functions called within app
-const app = () => {
-  navSlide();
-};
 // !get day and opening hours
 window.onload = function () {
   let day = new Date().getDay();
@@ -44,9 +40,17 @@ window.onload = function () {
 
   document.getElementById("day").innerHTML = days[day];
 };
+
+//!Menu
+
+function replace(hide, hideOne, show) {
+  document.getElementById(hide).style.display = "none";
+  document.getElementById(hideOne).style.display = "none";
+  document.getElementById(show).style.display = "flex";
+}
+
 // ! video
-document.querySelector("video").playbackRate = 1.5;
-app();
+document.querySelector("video").playbackRate = 0.7;
 
 // ! VidLine Animation
 // ! stroke-dasharray line
@@ -68,3 +72,8 @@ console.log(bottomLineP.getTotalLength());
 
 //   console.log(index, pathLength, item.innerHTML);
 // });
+// !all functions called within app
+const app = () => {
+  navSlide();
+};
+app();
