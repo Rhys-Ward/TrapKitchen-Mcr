@@ -1,0 +1,12 @@
+@media screen and (max-width: 576px) {
+  /* !open hours */
+  .openHours-container {
+    z-index: 2;
+    font-family: "Kanit", sans-serif;
+
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    width: 50%;
+  }
+}

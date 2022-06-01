@@ -29,4 +29,42 @@ const navSlide = () => {
 const app = () => {
   navSlide();
 };
+// !get day and opening hours
+window.onload = function () {
+  let day = new Date().getDay();
+  let days = [
+    "Open - 15:00 - 21:00",
+    "Open - 15:00 - 22:00",
+    "Closed",
+    "Open- 15:00 - 22:00",
+    "Open- 15:00 - 22:00",
+    "Open- 15:00 - 22:00",
+    "Open- 15:00 - 22:00",
+  ];
+
+  document.getElementById("day").innerHTML = days[day];
+};
+// ! video
+document.querySelector("video").playbackRate = 1.5;
 app();
+
+// ! VidLine Animation
+// ! stroke-dasharray line
+topLineP = document.getElementById("topline");
+console.log(topLineP.getTotalLength());
+bottomLineP = document.getElementById("bottomline");
+console.log(bottomLineP.getTotalLength());
+
+// let path = document.querySelectorAll(" svg path");
+// i = 0;
+// path.forEach(function (item, index) {
+//   i++;
+//   const pathLength = item.getTotalLength();
+
+//   item.setAttribute("stroke-dasharray", pathLength / 2);
+//   item.setAttribute("stroke-dashoffset", pathLength / 2);
+//   item.innerHTML =
+//     "<animate  attributeName = 'stroke-dashoffset' begin = '5s' dur='5s' to='0'fill='freeze'/>";
+
+//   console.log(index, pathLength, item.innerHTML);
+// });

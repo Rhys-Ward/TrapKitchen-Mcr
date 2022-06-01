@@ -1,0 +1,52 @@
+@media screen and (max-width: 576px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+  }
+  .mains-container {
+    border: blue solid 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .mains-items-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .mains-item {
+    border: yellow dotted 2px;
+    height: 90%;
+    width: 30%;
+    margin: 2% 5%;
+  }
+
+  .sides-container {
+    border: orange solid 2px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .side-items-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sides-item {
+    border: purple solid 2px;
+    height: 30%;
+    width: 20%;
+  }
+
+  .drinks-container {
+    border: blue 2px solid;
+  }
+  .drinks-items-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .drinks-item {
+    border: yellow solid 2px;
+    height: 10%;
+    width: 20%;
+  }
+}

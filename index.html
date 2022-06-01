@@ -7,31 +7,31 @@
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="menu.css">
+    <!-- !Website Icon-->
+    <link rel="icon" type="image/x-icon" href="logo__1_-removebg-preview.png" />
     <!-- !social icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+
     <title>Trap Kitchen Mcr</title>
   </head>
   <body>
-    <div class="overlay">
-      <div class="circle"></div>
-      <div class="scene"></div>
-    </div>
+    <div class="overlay"></div>
     <div class="overlay1"></div>
     <div class="container">
       <!-- !NAV -->
       <nav class="nav" id="nav">
         <div>
-          
-          <!-- <img src="logo.jpeg" alt="logo" id="logo" /> -->
           <img class="logo" src="images/trapkitchen1.png" alt="logo" />
         </div>
         <div class="nav-links">
           <ul class="nav-menuBox">
             <li class="nav-menu"><a href="#">Home</a></li>
-            <li class="nav-menu"><a href="#">Concept</a></li>
+            <li class="nav-menu"><a href="#">About Us</a></li>
             <li class="nav-menu"><a href="#">Menu</a></li>
             <li class="nav-menu"><a href="#">Contact Us</a></li>
           </ul>
@@ -69,77 +69,247 @@
           <div class="line2" id="line2"></div>
         </div>
       </nav>
-      <section>
-        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
-          <title>logo (1)</title>
-          <defs>
-            <linearGradient id="g1" x1="108.6" y1="576.5" x2="177" y2="576.5" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g2" x1="110" y1="575" x2="274" y2="575" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g3" x1="225" y1="568" x2="272" y2="568" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g4" x1="300" y1="519.5" x2="418" y2="519.5" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g5" x1="296" y1="585.5" x2="359" y2="585.5" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g6" x1="0" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-            <linearGradient id="g7" x1="394.6" y1="566.3" x2="486" y2="566.3" gradientUnits="userSpaceOnUse">
-              <stop offset="0" stop-color="#000000"/>
-              <stop offset="1" stop-color="#000000"/>
-            </linearGradient>
-          </defs>
-          <style>
-            .s0 { fill: none;stroke: #ffffff;stroke-width: 7.8 } 
-            .s1 { fill: none;stroke: url(#g1);stroke-width: 17 } 
-            .s2 { fill: none;stroke: url(#g2);stroke-width: 16 } 
-            .s3 { fill: none;stroke: url(#g3);stroke-width: 17 } 
-            .s4 { fill: none;stroke: url(#g4);stroke-width: 17 } 
-            .s5 { fill: none;stroke: url(#g5);stroke-width: 16 } 
-            .s6 { fill: none;stroke: url(#g6);stroke-width: 16 } 
-            .s7 { fill: none;stroke: url(#g7);stroke-width: 17 } 
-          </style>
-          <path id="T" class="s0" d="m213 384h-48l7-42 148 2-6 39-50 2-14 104-55-1z"/>
-          <path id="R" class="s0" d="m345 342l104 1 25.7 14.9 4.3 16.1 1.1 15.7-3.1 20.3-8.6 13.3-23.4 14.7 27 49h-53l-23-46h-18l-7 48-51-3z"/>
-          <path id="Shape 2" class="s0" d="m712 363"/>
-          <path id="k" class="s1" d="m119 634l-10.4-19.7 68.4-95.3"/>
-          <path id="k2" class="s2" d="m274 614l-87.5-20.6-76.5-9.4 114-48"/>
-          <path id="I" class="s3" d="m272 519l-47 98"/>
-          <path id="t" class="s4" d="m300 521l118-3"/>
-          <path id="t2" class="s5" d="m359 523l-63 125"/>
-          <path id="Shape 1" class="s6" d="m793 386"/>
-          <path id="c" class="s7" d="m486 556l-38 41-23.7 17.3-25.8 4.2-3.9-16.8 3.8-17.2 21.2-40.4 39.4-30.1 12 14"/>
-        </svg>
       <!-- !HOME -->
-      <section class="home-container">
-        <h3>i am home</h3>
+      <section class="home-container" data-directional="vertical" data.rate=".4">
+         <!-- !vidLine -->
+         <div class="svgContainer">
+
+           <svg class="vidLine" viewBox="330 0 600 844" >
+            
+             
+            <path  id="topline" class="s0" d="m316 172h378l41.8 41.8h225.2" />
+            <path id="bottomline" class="s0" d="m940.5 585.3l-100.5 0.7-31 53h-356l-31-63h-99"/>
+         
+          </svg>
+        </div>
+        <video
+          src="images/manc.mp4#t=115,220"
+         
+          type="video/mp4"
+          autoplay
+          muted
+          preload
+          loop
+        >
+      </video>
+      
+        <div class="address-container">
+          <div class="pin-container">
+            <svg
+              class="pin"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-4.198 0-8 3.403-8 7.602 0 6.243 6.377 6.903 8 16.398 1.623-9.495 8-10.155 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.342-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+              />
+            </svg>
+          </div>
+          <p>
+            6-8 Hillkirk Street <br />
+            Beswick <br />
+          </p>
+        </div>
+        <div class="date-container">
+          <div class="clock-container">
+            <svg
+              class="clock"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+              />
+            </svg>
+          </div>
+            <a class="opening-times-btn" href="" >
+            <div id="day"> 
+              
+            </div>
+          </a>
+          
+        </div>
       </section>
-      <section class="about-container">
+      <section class="about-container" >
+        <!-- !vidLine -->
+        <!-- <div class="svgContainer">
+        <svg  viewBox="0 0 1920 1080" stroke="white"  preserveAspectRatio="xMidYMax meet" data-directional="vertical" data.rate=".2" >
+          <path id="topline" class="s0" d="m-105 825c0 0 254.8-309.9 300-285 45.2 24.9 157-22 157-22 0 0 181.9-50.5 187-115 5.1-64.5 129.2-118.5 164-119 34.8-0.5 675-162 675-162l464-172"/>
+          <path id="bottomline" class="s0" d="m695 1160c0 0 392.2-332.8 406-376 13.8-43.2 313.3-14.8 406-44 92.7-29.2 461-362 461-362"/>
+        </svg>
+        </div> -->
         <h3>i am about</h3>
+       
       </section>
       <section class="menu-container">
         <h3>i am menu</h3>
+        <div class="mains-container">
+          <h4>Mains</h4>
+        <div class="mains-items-container">
+
+          <div class="mains-item">
+          <p>Chicken Combo</p>
+          <p>Pick a seasoning for your Chicken combo. Comes with two sides.</p>
+          <p>£12.00</p>
+          </div>
+          <div class="mains-item">
+          <p>Seafood Combo</p>
+          <p>Enjoy your chosen Seafood, with two sides.</p>
+          <p>£18.00</p>
+          </div>
+          <div class="mains-item">
+          <p>Ballers Combo</p>
+          <p>Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
+          <p>£12.00</p>
+          </div>
+        </div>  
+        </div>
+        <div class="sides-container">
+          <h4>Sides</h4>
+          <p>Served on their own</p>
+          <div class="side-items-container">
+
+            <div class="sides-item" >
+            <p>Seasoned Lobster Tail</p>
+            <p>£7.50</p>
+            </div>
+            <div class="sides-item" >
+            <p>Seasoned Salmon</p>
+            <p>£7.50</p>
+            </div>
+            <div class="sides-item" >
+            <p>Crab Legs</p>
+            <p>£7.50</p>
+            </div>
+            <div class="sides-item" >
+            <p>Bang Bang Prawns</p>
+            <p>£7.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Tiger Prawns</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Chicken</p>
+            <p>Choose your seasoning.</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Mac N Cheese</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Alfredo Pasta</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Spanish Rice</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Spring Onion White Rice</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Teriyaki Rice</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Mashed Potatoes</p>
+            <p>£6.00</p>
+            </div>
+            <div class="sides-item" >
+            <p>Cheeto Wings</p>
+            <p>£6.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="drinks-container" >
+          <h4>Drinks</h4>
+          <div class="drinks-items-container">
+
+            <div class="drinks-item" >
+              <p>Rio</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Fanta Orange</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Fanta Fruit T</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Water</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>7UP</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Trap Medicine (Fruit Punch)</p>
+              <p>£3:50</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Coca-Cola</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Lilt</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Rubicon Mango</p>
+              <p>£1:00</p>
+            </div>
+            <div class="drinks-item" >
+              <p>Rubicon Guava</p>
+              <p>£1:00</p>
+            </div>
+          </div>
+
+        </div>
       </section>
       <section class="contact-container">
-        <h3>i am contact</h3>
+        <div class="openHours-container">
+          <div class="clock-container">
+            <svg
+              class="clock"
+              width="24"
+              height="24"
+              xmlns="http://www.w3.org/2000/svg"
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+            >
+              <path
+                d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
+              />
+            </svg>
+          </div>
+          <p>
+            <span>Mon:</span> 15:00 - 22:00
+            <br />
+            <span>Tue:</span> Closed
+            <br />
+            <span>Wed - Sat:</span> 15:00 - 22:00
+            <br />
+            <span>Sun:</span> 15:00 - 21:00
+            <br />
+          </p>
+        
+          </div> 
+        </div>
       </section>
 
       <footer class="footer">i am footerrrr &copy;</footer>
     </div>
     <script src="app.js"></script>
-    <script type="module" src="three-3d.js"></script>
   </body>
 </html>
