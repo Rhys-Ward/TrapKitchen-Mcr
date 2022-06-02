@@ -27,6 +27,7 @@
 
 /* ! NAV */
 .nav {
+  /* border: 2px solid blue; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -37,6 +38,7 @@
   right: 0px;
   width: 100%;
 }
+
 .nav-links {
   display: flex;
   position: absolute;
@@ -96,13 +98,6 @@
   position: absolute;
   right: 50px;
 }
-/* .bbar {
-  position: absolute;
-  border: 2px solid brown;
-  width: 100%;
-  border-top: 3px red solid;
-  height: 100%;
-} */
 
 .line1,
 .line2 {
@@ -110,7 +105,7 @@
   border-top: 3px red solid;
   height: 3px;
   margin: 5px;
-  transition: navLinkFade 0.3s ease;
+  transition: all 0.3s ease;
 }
 .toggle .line1 {
   transform: rotate(-45deg) translate(1px, 3px);
@@ -224,13 +219,164 @@ i {
 i:hover {
   color: red;
 }
-.logo {
+.logo-container {
+  /* border: 2px solid red; */
   height: 8vh;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  /* border: 2px solid green; */
+  width: 100%;
+  height: 50%;
+}
+
+.trap {
+  /* position: relative; */
+  height: 100%;
+  width: 100%;
   animation: logoFade 4s ease-in forwards;
+}
+
+/* ! svg TRAP animation  */
+.s0,
+.s1,
+.s1-mid,
+.s2,
+.s2-mid,
+.s3,
+.s3-mid {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 4.9;
+  transition: stroke 0.5s ease-out;
+}
+/* letter T */
+.s0 {
+  stroke-dasharray: 578.4028930664062;
+  stroke-dashoffset: 578.4028930664062;
+  animation: tLine 2s ease-in forwards 1.3s;
+}
+
+@keyframes tLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 578.4028930664062;
+  }
+}
+/* letter r */
+.s1 {
+  stroke-dasharray: 655.471435546875;
+  stroke-dashoffset: 655.471435546875;
+  animation: rLine 2s ease-in forwards 2.5s;
+}
+@keyframes rLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 655.471435546875;
+  }
+}
+.s1-mid {
+  stroke-dasharray: 126.74140930175781;
+  stroke-dashoffset: 126.74140930175781;
+  animation: midRLine 2s ease-in forwards 3s;
+}
+@keyframes midRLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 126.74140930175781;
+  }
+}
+/* letter A */
+.s2 {
+  stroke-dasharray: 572.5145874023438;
+  stroke-dashoffset: 572.5145874023438;
+  animation: aLine 2s ease-in forwards 3.3s;
+}
+@keyframes aLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 572.5145874023438;
+  }
+}
+.s2-mid {
+  stroke-dasharray: 119.03766632080078;
+  stroke-dashoffset: 119.03766632080078;
+  animation: aMidLine 2s ease-in forwards 4.3s;
+}
+@keyframes aMidLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 119.03766632080078;
+  }
+}
+/* LETTER P */
+.s3 {
+  stroke-dasharray: 534.9485473632812;
+  stroke-dashoffset: 534.9485473632812;
+  animation: pLine 2s ease-in forwards 3.8s;
+}
+@keyframes pLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 534.9485473632812;
+  }
+}
+.s3-mid {
+  stroke-dasharray: 125.05360412597656;
+  stroke-dashoffset: 125.05360412597656;
+  animation: pMidLine 2s ease-in forwards 3.9s;
+}
+@keyframes pMidLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 125.05360412597656;
+  }
+}
+.trap-active {
+  stroke: white;
+  transition: stroke 200ms ease-in-out;
+}
+
+/* ///////////////////////// */
+/* !kitchen logo */
+.kitchen-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid purple; */
+  width: 100%;
+  height: 50%;
+}
+.kitchen-logo img {
+  position: relative;
+  max-width: 55%;
+  height: auto;
+  animation: logoFade 6s ease-in forwards;
 }
 
 @keyframes logoFade {
   0% {
+    opacity: 0;
+  }
+  70% {
     opacity: 0;
   }
   100% {

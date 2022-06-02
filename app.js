@@ -24,10 +24,6 @@ const navSlide = () => {
     });
   });
 };
-const app = () => {
-  navSlide();
-};
-app();
 
 // !get day and opening hours
 window.onload = function () {
@@ -58,10 +54,51 @@ document.querySelector("video").playbackRate = 0.7;
 
 // ! VidLine Animation
 // ! stroke-dasharray line
-topLineP = document.getElementById("topline");
-console.log(topLineP.getTotalLength());
-bottomLineP = document.getElementById("bottomline");
-console.log(bottomLineP.getTotalLength());
+// topLineP = document.getElementById("topline");
+// console.log(topLineP.getTotalLength());
+// bottomLineP = document.getElementById("bottomline");
+// console.log(bottomLineP.getTotalLength());
+// !trap svg
+// T
+tLine = document.getElementById("T");
+console.log(tLine.getTotalLength(), "i am T line");
+// R
+rLine = document.getElementById("R");
+console.log(rLine.getTotalLength(), "i am r line");
+midRLine = document.getElementById("R-Mid");
+console.log(midRLine.getTotalLength(), "i am mid r line");
+// A
+aLine = document.getElementById("A");
+console.log(aLine.getTotalLength(), "i am a line");
+midALine = document.getElementById("A-Mid");
+console.log(midALine.getTotalLength(), "i am mid a line");
+// P
+pLine = document.getElementById("P");
+console.log(pLine.getTotalLength(), "i am p line");
+midPLine = document.getElementById("P-Mid");
+console.log(midPLine.getTotalLength(), "i am mid p line");
+
+// !trap active
+
+window.onscroll = () => {
+  if (window.scrollY > `${window.innerHeight}`) {
+    tLine.classList.add("trap-active");
+    rLine.classList.add("trap-active");
+    midRLine.classList.add("trap-active");
+    aLine.classList.add("trap-active");
+    midALine.classList.add("trap-active");
+    pLine.classList.add("trap-active");
+    midPLine.classList.add("trap-active");
+  } else {
+    tLine.classList.remove("trap-active");
+    rLine.classList.remove("trap-active");
+    midRLine.classList.remove("trap-active");
+    aLine.classList.remove("trap-active");
+    midALine.classList.remove("trap-active");
+    pLine.classList.remove("trap-active");
+    midPLine.classList.remove("trap-active");
+  }
+};
 
 // let path = document.querySelectorAll(" svg path");
 // i = 0;
@@ -76,4 +113,9 @@ console.log(bottomLineP.getTotalLength());
 
 //   console.log(index, pathLength, item.innerHTML);
 // });
+
 // !all functions called within app
+const app = () => {
+  navSlide();
+};
+app();
