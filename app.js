@@ -24,6 +24,10 @@ const navSlide = () => {
     });
   });
 };
+const app = () => {
+  navSlide();
+};
+app();
 
 // !get day and opening hours
 window.onload = function () {
@@ -73,7 +77,3 @@ console.log(bottomLineP.getTotalLength());
 //   console.log(index, pathLength, item.innerHTML);
 // });
 // !all functions called within app
-const app = () => {
-  navSlide();
-};
-app();
