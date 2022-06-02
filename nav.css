@@ -2,9 +2,9 @@
   background: black;
   height: 100%;
   width: 100%;
-  animation: slide 4s ease forwards;
+  animation: slide 5s ease forwards;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
 }
 
 .overlay1 {
@@ -12,8 +12,8 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  animation: slide 5s ease forwards;
-  z-index: 1;
+  animation: slide 4s ease-in-out forwards;
+  z-index: 5;
 }
 
 @keyframes slide {
@@ -96,13 +96,21 @@
   position: absolute;
   right: 50px;
 }
+/* .bbar {
+  position: absolute;
+  border: 2px solid brown;
+  width: 100%;
+  border-top: 3px red solid;
+  height: 100%;
+} */
+
 .line1,
 .line2 {
   width: 25px;
   border-top: 3px red solid;
   height: 3px;
   margin: 5px;
-  transition: all 0.3s ease;
+  transition: navLinkFade 0.3s ease;
 }
 .toggle .line1 {
   transform: rotate(-45deg) translate(1px, 3px);
@@ -218,6 +226,16 @@ i:hover {
 }
 .logo {
   height: 8vh;
+  animation: logoFade 4s ease-in forwards;
+}
+
+@keyframes logoFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
 
 .footer {

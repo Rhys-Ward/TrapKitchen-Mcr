@@ -69,6 +69,11 @@
         <div class="burger">
           <div class="line1" id="line1"></div>
           <div class="line2" id="line2"></div>
+          <!-- <svg class="bbar" width="100" height="100"
+         >
+          <image href="images/burgerBar.svg" height="100" width="100"/>
+        </svg> -->
+        
         </div>
       </nav>
       <!-- !HOME -->
@@ -96,6 +101,7 @@
         <div class="videobg">   </div>
         <div class="videobg2">   </div>
         <div class="video-container"><video src="./images/pexels-manc.mp4" type="mp4" autoplay muted loop ></video></div>
+        <div class="vidFade"></div>
     
            
        
@@ -158,11 +164,17 @@
       <section class="menu-container">
 
         <div class="menu-headings"> 
-
-          <h3  id="mains" style="z-index: 10;" onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>
+          <div class="heading-container">
+            <h3  id="mains" style="z-index: 10;" onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
+          </div>
+          <div class="heading-container">
           <h3 id="sides" style="z-index: 10;" onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
-          <h3 id="drinks" style="z-index: 10;" onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
-        </div>        
+          </div>
+          <div class="heading-container">
+          
+            <h3 id="drinks" style="z-index: 10;" onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+          </div>
+          </div>        
         <div id="menu">
 
         </div>
@@ -175,17 +187,17 @@
             <div class="mains-container2">
 
               <div class="mains-item">
-              <p>Chicken Combo</p>
+              <h5>Chicken Combo</h5>
               <p>Pick a seasoning for your Chicken combo. Comes with two sides.</p>
               <p>£12.00</p>
               </div>
               <div class="mains-item">
-              <p>Seafood Combo</p>
+              <h5>Seafood Combo</h5>
               <p>Enjoy your chosen Seafood, with two sides.</p>
               <p>£18.00</p>
               </div>
               <div class="mains-item">
-              <p>Ballers Combo</p>
+              <h5>Ballers Combo</h5>
               <p>Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
               <p>£12.00</p>
               </div>
