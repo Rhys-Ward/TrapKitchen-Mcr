@@ -15,20 +15,23 @@
 
   /* !address */
   .address-container {
+    /* border: 2px solid blue; */
     position: absolute;
-    bottom: 5%;
-    right: 5%;
+    bottom: 15%;
+    right: 0;
     z-index: 2;
     display: flex;
-    width: 45%;
-    justify-content: flex-end;
+    width: 80%;
+    font-weight: bolder;
+    animation: addressFade 2s ease-in 1s;
   }
   .address-container p {
-    width: 100%;
+    width: 80%;
     height: 100%;
     font-family: "Kanit", sans-serif;
-    display: flex;
-    animation: addressFade 6s ease-in;
+    font-size: 1.5em;
+    color: black;
+    /* border: 2px solid black; */
   }
 
   @keyframes addressFade {
@@ -42,37 +45,10 @@
 
   .pin {
     fill: red;
-    animation: pinMove 1s ease forwards, pinSpin 1.5s forwards;
-    left: 500;
-    animation-delay: 5s;
+
     position: absolute;
   }
-  @keyframes pinMove {
-    0% {
-      left: 500;
-    }
-    100% {
-      left: 0;
-    }
-  }
-  @keyframes pinSpin {
-    0% {
-      transform: rotate(0);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes pinMove {
-    0% {
-      transform: rotate(0);
-      left: 500;
-    }
-    100% {
-      transform: rotate(360deg);
-      left: 0;
-    }
-  }
+
   .pin-container {
     width: 20%;
     display: flex;
@@ -83,22 +59,38 @@
 
   /* !date */
   .clock {
-    margin-left: 5%;
-    fill: red;
+    width: 50px;
+    height: 100%;
+  }
+  /* clock svg animation */
+  .clock1 {
+    stroke-dasharray: 176.51873779296875;
+    stroke-dashoffset: 176.51873779296875;
+    animation: clockAni 2s ease-in forwards 1.8s;
+    stroke: red;
   }
 
+  @keyframes clockAni {
+    to {
+      stroke-dashoffset: 0;
+    }
+    from {
+      stroke-dashoffset: 176.51873779296875;
+    }
+  }
   .date-container {
     position: absolute;
     z-index: 2;
     font-family: "Kanit", sans-serif;
-    bottom: 5%;
-    left: 5%;
+    bottom: 4%;
+    right: 5%;
     cursor: pointer;
+    justify-content: space-evenly;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    /* border: 2px solid red; */
-    width: 45%;
+    flex-direction: row;
+    width: 80%;
+    font-size: 1.5em;
+    animation: addressFade 2s ease-in 1s;
   }
   .opening-times-btn {
     color: red;
@@ -221,7 +213,7 @@
     height: auto;
   }
 
-  #topline {
+  /* #topline {
     stroke-dasharray: 662.3141479492188;
     stroke-dashoffset: 662.3141479492188;
     animation: line1Animate 5s ease;
@@ -234,9 +226,9 @@
     from {
       stroke-dashoffset: 662.3141479492188;
     }
-  }
+  } */
 
-  #bottomline {
+  /* #bottomline {
     stroke-dasharray: 687.11669921875;
     stroke-dashoffset: 687.11669921875;
     animation: line2Animate 4s ease;
@@ -249,13 +241,13 @@
     from {
       stroke-dashoffset: 687.11669921875;
     }
-  }
+  } */
 
-  .s0 {
+  /* .s0 {
     fill: none;
     stroke: #ffffff;
     stroke-width: 6;
     position: absolute;
     width: 100%;
-  }
+  } */
 }
