@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
+/*font-family: 'Noto Serif', serif;*/
+
 @media screen and (max-width: 576px) {
   .menu-container {
     display: flex;
     flex-direction: column;
     padding-left: 2%;
+    background-color: white;
+    color: black;
+    font-family: "Noto Serif", serif;
   }
   .mains-container {
     display: flex;
@@ -43,7 +49,7 @@
   }
   .menu-headings h3:hover {
     cursor: pointer;
-    font-size: 1.2rem;
+    color: grey;
   }
   .heading-container {
     margin: 5%;
@@ -65,16 +71,27 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .side-items-container h4 {
+    font-size: 1.2rem;
+  }
   .sides-container2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .sides-item {
-    height: 10%;
-    width: 30%;
-    border: yellow solid 2px;
-    margin: 2%;
+    height: 5%;
+    width: 60%;
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .sides-item p {
+    margin-left: 5%;
+  }
+  .sides-item p.price {
+    margin-left: auto;
   }
 
   .drinks-container {
@@ -86,12 +103,19 @@
   }
   .drinks-container2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
   }
   .drinks-item {
     height: 10%;
-    width: 20%;
+    width: 60%;
     margin: 2%;
+    display: flex;
+  }
+  .drinks-item p {
+    margin-left: 7%;
+  }
+  .drinks-item p.price {
+    margin-left: auto;
   }
 }
