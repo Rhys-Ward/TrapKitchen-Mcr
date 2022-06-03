@@ -352,7 +352,7 @@ i:hover {
 }
 .trap-active {
   stroke: white;
-  transition: stroke 200ms ease-in-out;
+  transition: stroke 200ms linear;
 }
 
 /* ///////////////////////// */

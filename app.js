@@ -99,7 +99,9 @@ window.onscroll = () => {
     midPLine.classList.remove("trap-active");
   }
 };
-
+// !clock svg
+clock = document.getElementById("clock");
+console.log(clock.getTotalLength(), "i am clock");
 // let path = document.querySelectorAll(" svg path");
 // i = 0;
 // path.forEach(function (item, index) {
