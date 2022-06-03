@@ -3,12 +3,12 @@
 
 @media screen and (max-width: 576px) {
   .menu-container {
+    padding: 2%;
     flex-direction: column;
-    padding-left: 2%;
-    background-color: white;
-    color: black;
+    background-color: black;
     font-family: "Noto Serif", serif;
     height: auto;
+    color: white;
   }
   .menu-title {
     font-size: 4rem;
@@ -25,80 +25,6 @@
     white-space: nowrap;
     margin: 1% 0%;
   }
-  .menu-guide {
-    font-size: 1rem;
-    margin-bottom: 10%;
-  }
-
-  .menu-box {
-    border: 2px solid green;
-    height: auto;
-    width: 98%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .mains-container,
-  .sides-container,
-  .drinks-container {
-    /* border: 2px solid brown; */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    /* position: absolute; */
-  }
-
-  .mains-items-container {
-    display: flex;
-    flex-direction: column;
-
-    /* border: 2px solid blue; */
-  }
-  .mains-container2 {
-    border: 2px dotted orange;
-    display: flex;
-    flex-direction: column;
-    padding: 0% 1%;
-    height: auto;
-    justify-content: space-evenly;
-    margin: 5% 0%;
-  }
-  .item-info {
-    border: 2px dotted red;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  .mains-description {
-    border: 2px solid brown;
-    width: 70%;
-  }
-  .mains-item {
-    /* border: 2px solid red; */
-    height: 90%;
-    width: 100%;
-  }
-  .mains-item h5 {
-    font-size: 1.2rem;
-    margin-bottom: 2%;
-  }
-  /* .mains-item p {
-    border: 2px solid red;
-    margin-bottom: 2%;
-  } */
-
-  .menu-headings h3 {
-    margin: 2%;
-    cursor: pointer;
-    margin-bottom: 5%;
-    font-size: 2.2rem;
-  }
-  .menu-headings h3:hover {
-    cursor: pointer;
-    color: grey;
-  }
   .heading-container {
     height: 50%;
     width: 100%;
@@ -107,57 +33,125 @@
     align-items: center;
     margin: 0px 18%;
     letter-spacing: 0.1rem;
-    /* border: red solid 2px; */
+  }
+  .heading-container h3 {
+    margin: 2%;
+    cursor: pointer;
+    margin-bottom: 5%;
+    font-size: 2.2rem;
+  }
+  .heading-container:hover {
+    cursor: pointer;
+    color: red;
+  }
+  .underline {
+    display: inline-block;
   }
 
-  /* .sides-container {
-    
+  .underline:after {
+    content: "";
+    width: 0px;
+    height: 4px;
+    display: block;
+    background: red;
+    transition: 300ms;
+  }
 
+  .underline:hover:after {
+    width: 120%;
+  }
+
+  .scroll-guide {
+    width: 80vw;
+    font-size: 1rem;
+    margin-bottom: 10%;
+  }
+
+  .menu-box {
+    /* border: 2px solid green; */
+    height: auto;
     width: 100%;
-    height: 100vh;
-
-    flex-direction: column;
-  } */
-  .side-items-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin: 1% 0;
+  }
+  /*? opening times */
+  .menu-info {
+    /* border: 2px solid red; */
+    font-size: 1rem;
+    margin-top: 1%;
+  }
+  .takeout {
+    margin-bottom: 5%;
+  }
+  .mains-container,
+  .sides-container,
+  .drinks-container {
+    /* border: 2px solid brown; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100%;
+    /* margin: 5% 0; */
   }
-  .side-items-container h4 {
-    font-size: 1.2rem;
-  }
+  .mains-container2,
   .sides-container2 {
-    border: 2px dotted blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     height: auto;
+    width: 100%;
+  }
+  /* !mains */
+  /* container for each main */
+  .mains-item {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  /*? title and price container*/
+  .item-info {
+    /* border: 2px dotted red; */
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 1.7rem;
+    color: red;
+  }
+  .mains-description {
+    /* border: 2px solid brown; */
+    width: 70%;
     font-size: 1.2rem;
   }
-  .sides-item {
-    height: 5%;
-    width: 90%;
 
-    margin-top: 10%;
+  /* !SIDES */
+
+  /* sides container */
+  /* .sides-item {
+    border: 2px solid red;
+    width: 100%;
+    font-size: 1.7rem;
+    margin-bottom: 10%;
     display: flex;
-    justify-content: flex-start;
+    color: red;
+    align-items: center;
+  } */
+  .sides-title {
+    /* border: 2px solid blue; */
+    width: 70%;
   }
 
-  .sides-item p {
-    margin-left: 5%;
-  }
   .sides-item p.price {
     margin-left: auto;
   }
-
-  /* .drinks-container {
-    
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-    flex-direction: column;
-  } */
+  .sides-info {
+    font-size: 1rem;
+  }
+  /* !DRINKS */
   .drinks-items-container {
     display: flex;
     flex-wrap: wrap;
@@ -166,6 +160,7 @@
   .drinks-container2 {
     display: flex;
     flex-direction: column;
+
     /* flex-wrap: wrap; */
   }
   .drinks-item {

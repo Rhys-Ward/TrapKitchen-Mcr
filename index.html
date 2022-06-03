@@ -118,11 +118,7 @@
         <div class="video-container"><video src="./images/pexels-manc.mp4" type="mp4" autoplay muted loop ></video></div>
         <div class="vidFade"></div>
     
-           
-       
-      
-      
-      
+      <!-- address -->
         <div class="address-container">
           <div class="pin-container">
             <svg
@@ -142,6 +138,7 @@
             Beswick <br />
           </p>
         </div>
+        <!-- date -->
         <div class="date-container">
           <div class="clock-container">
             <svg
@@ -166,6 +163,7 @@
           
         </div>
       </section>
+      <!-- ABOUT -->
       <section class="about-container" >
         <!-- !vidLine -->
         <!-- <div class="svgContainer">
@@ -181,126 +179,191 @@
        
       </section>
       <!-- !MENU -->
-      <section class="menu-container" >
-        <h2 class="menu-title">MENU</h2>
+      <section class="menu-container"  >
+        <h2 class="menu-title" data-aos="fade-up" data-aos-duration="2200">MENU</h2>
         
         <div  class="menu-headings" data-aos="fade-up" data-aos-duration="2200"> 
           <div class="heading-container" >
-            <h3  id="mains" style="z-index: 10; width: 100px;  " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
+            <h3 class="underline"  id="mains" style="z-index: 10; width: 100px;  " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
           </div>
           
           <div class="heading-container">
-          <h3 id="sides" style="z-index: 10;  width: 100px; " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
+          <h3 class="underline" id="sides" style="z-index: 10;  width: 100px; " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
           </div>
           <div class="heading-container">
           
-            <h3 id="drinks" style="z-index: 10; width: 100px; " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+            <h3 class="underline" id="drinks" style="z-index: 10; width: 100px; " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
           </div>
           </div>  
-          <p class="menu-guide">Scroll left/right for additional menu categories</p>  
+          <p class="scroll-guide" data-aos="fade-up" data-aos-duration="2200">Scroll left/right for additional menu categories</p>  
                   
-              <!--! menu box  -->
-        <div class="menu-box">
-          <p>Opening Times today:</p>
-          <h4>For takeout only</h4>
-
+          <!--! menu box  -->
+          <div class="menu-box">
+          
+            <p class="menu-info" data-aos="fade-up" data-aos-duration="2200">Opening Times today:</p>
+            <h4 class="menu-info takeout" data-aos="fade-up" data-aos-duration="2200">For takeout only</h4>
+          <!-- ! mains -->
         <div class="mains-container" style="display: flex;">
           <div class="mains-items-container" id="mains-items-container"  >
-            <div class="main-heading">
+            <div class="mains-container2" data-aos="fade-up" data-aos-duration="2200">
 
-            </div>
-            <div class="mains-container2">
-
-              <div class="mains-item">
-              <h5>Chicken Combo</h5>
-              <div class="item-info">
-              <p class="mains-description">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
+              <div class="mains-item" >
+                <div class="item-info">
+              <h5 class="mains-title">Chicken Combo</h5>
               <p class="mains-price">£12.00</p>
+              
             </div>
+              <p class="mains-description">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
+           
               </div>
               <div class="mains-item">
-              <h5>Seafood Combo</h5>
-              <p>Enjoy your chosen Seafood, with two sides.</p>
-              <p>£18.00</p>
+                <div class="item-info">
+              <h5 class="mains-title">Seafood Combo</h5>
+              <p class="mains-price">£18.00</p>
+            </div>
+              <p class="mains-description">Enjoy your chosen Seafood, with two sides.</p>
+              
               </div>
               <div class="mains-item">
-              <h5>Ballers Combo</h5>
-              <p>Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
-              <p>£12.00</p>
+                <div class="item-info">
+              <h5 class="mains-title">Ballers Combo</h5>
+              <p class="mains-price">£12.00</p>
+              </div>
+              <p class="mains-description">Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
+              
               </div>
             </div>
-        </div>  
+            </div>
+    
         </div>
+        <!-- SIDES -->
         <div class="sides-container"  >
           <div class="side-items-container" id="side-items-container" style="display:none;" >
 
-            
             <div class="sides-container2">
-              <p>(Served on their own)</p>
-
-              <div class="sides-item" >
-              <p>- Seasoned Lobster Tail</p>
+          
+              <!-- <div class="sides-item" > -->
+              <div class="mains-item" >
+              <div class="item-info" >
+                <!-- <div class="sides-title"> -->
+              <p> Seasoned Lobster Tail</p>
+              <!-- </div> -->
               <p class="price">£7.50</p>
               </div>
-              <div class="sides-item" >
-              <p>- Seasoned Salmon</p>
+              <p class="mains-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, repudiandae! Modi.</p>
+              </div>
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Seasoned Salmon</p>
               <p class="price">£7.50</p>
               </div>
-              <div class="sides-item" >
-              <p>- Crab Legs</p>
+              <p class="mains-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, neque.</p>
+                </div>
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                <div class="item-info" >
+              <p> Crab Legs</p>
               <p class="price">£7.50</p>
               </div>
-              <div class="sides-item" >
-              <p>- Bang Bang Prawns</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+                </div>
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                <div class="item-info" >
+              <p> Bang Bang Prawns</p>
               <p class="price">£7.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Tiger Prawns</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Tiger Prawns</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Chicken</p>
-              
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Chicken</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Mac N Cheese</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Mac N Cheese</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Alfredo Pasta</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Alfredo Pasta</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Spanish Rice</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Spanish Rice</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Spring Onion White Rice</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Spring Onion White Rice</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Teriyaki Rice</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                <div class="item-info" >
+              <p> Teriyaki Rice</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Mashed Potatoes</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                <div class="item-info" >
+              <p> Mashed Potatoes</p>
               <p class="price">£6.00</p>
               </div>
-              <div class="sides-item" >
-              <p>- Cheeto Wings</p>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+              <!-- <div class="sides-item" > -->
+                <div class="mains-item" >
+                  <div class="item-info" >
+              <p> Cheeto Wings</p>
               <p class="price">£6.00</p>
               </div>
+              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+            </div>
+              <p class="sides-info">(Served on their own)</p>
             </div>
           </div>
         </div>
+        <!-- drinks -->
         <div class="drinks-container" >
           <div class="drinks-items-container" id="drinks-items-container" style="display: none;";  >
-
-
-            <div class="drinks-container2">
-
-              <div class="drinks-item" >
+            <div class="drinks-container2" >
+              <div class="drinks-item " >
                 <p>- Rio</p>
                 <p class="price">£1:00</p>
               </div>
@@ -342,10 +405,10 @@
               </div>
             </div>
           </div>
-
         </div>
         </div>
       </section>
+      <!-- contact -->
       <section class="contact-container">
         <div class="openHours-container">
           <div class="clock-container">
@@ -376,7 +439,7 @@
           </div> 
         </div>
       </section>
-
+    <!-- footer -->
       <footer class="footer">i am footerrrr &copy;</footer>
     </div>
     <script src="app.js"></script>
