@@ -18,6 +18,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     />
+
+    <!-- AOS Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
 
     <title>Trap Kitchen Mcr</title>
@@ -97,15 +100,10 @@
       <section id="home-container" class="home-container" data-directional="vertical" data.rate=".4">
          <!-- !vidLine -->
          <div class="svgContainer1">
-          <!-- <svg class="vidLine1" viewBox="330 0 600 844" >
-            
-             
+          <!-- <svg class="vidLine1" viewBox="330 0 600 844" 
             <path  id="topline" class="s0" d="m316 172h378l41.8 41.8h225.2" />
-           
-         
           </svg> -->
         </div>
-        
          <div class="svgContainer2">
           <!-- <svg class="vidLine2" viewBox="330 0 600 844" >
             
@@ -176,38 +174,49 @@
           <path id="bottomline" class="s0" d="m695 1160c0 0 392.2-332.8 406-376 13.8-43.2 313.3-14.8 406-44 92.7-29.2 461-362 461-362"/>
         </svg>
         </div> -->
-        <h3>i am about</h3>
+        <div class="logocontainer">
+        <img src="images/CONCEPT.png" alt="" class="conceptlogo">
+      </div>
+        <h3>DASHA IS HERE</h3>
        
       </section>
-      <section class="menu-container">
-
-        <div  class="menu-headings"> 
-          <div class="heading-container">
-            <h3  id="mains" style="z-index: 10;" onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
+      <!-- !MENU -->
+      <section class="menu-container" >
+        <h2 class="menu-title">MENU</h2>
+        
+        <div  class="menu-headings" data-aos="fade-up" data-aos-duration="2200"> 
+          <div class="heading-container" >
+            <h3  id="mains" style="z-index: 10; width: 100px;  " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
           </div>
+          
           <div class="heading-container">
-          <h3 id="sides" style="z-index: 10;" onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
+          <h3 id="sides" style="z-index: 10;  width: 100px; " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
           </div>
           <div class="heading-container">
           
-            <h3 id="drinks" style="z-index: 10;" onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+            <h3 id="drinks" style="z-index: 10; width: 100px; " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
           </div>
-          </div>        
-        <div id="menu">
+          </div>  
+          <p class="menu-guide">Scroll left/right for additional menu categories</p>  
+                  
+              <!--! menu box  -->
+        <div class="menu-box">
+          <p>Opening Times today:</p>
+          <h4>For takeout only</h4>
 
-        </div>
-        <div class="mains-container">
-          <div class="mains-items-container" id="mains-items-container" style="display:flex"  onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">
+        <div class="mains-container" style="display: flex;">
+          <div class="mains-items-container" id="mains-items-container"  >
             <div class="main-heading">
 
-              <h4>Mains</h4>
             </div>
             <div class="mains-container2">
 
               <div class="mains-item">
               <h5>Chicken Combo</h5>
-              <p>Pick a seasoning for your Chicken combo. Comes with two sides.</p>
-              <p>£12.00</p>
+              <div class="item-info">
+              <p class="mains-description">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
+              <p class="mains-price">£12.00</p>
+            </div>
               </div>
               <div class="mains-item">
               <h5>Seafood Combo</h5>
@@ -222,12 +231,12 @@
             </div>
         </div>  
         </div>
-        <div class="sides-container">
-          <div class="side-items-container" id="side-items-container" style="display:none"  onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">
-            <h4>Sides</h4>
-            <p>(Served on their own)</p>
+        <div class="sides-container"  >
+          <div class="side-items-container" id="side-items-container" style="display:none;" >
 
+            
             <div class="sides-container2">
+              <p>(Served on their own)</p>
 
               <div class="sides-item" >
               <p>- Seasoned Lobster Tail</p>
@@ -286,8 +295,8 @@
           </div>
         </div>
         <div class="drinks-container" >
-          <div class="drinks-items-container" id="drinks-items-container" style="display:none"  onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')" >
-            <h4>Drinks</h4>
+          <div class="drinks-items-container" id="drinks-items-container" style="display: none;";  >
+
 
             <div class="drinks-container2">
 
@@ -335,6 +344,7 @@
           </div>
 
         </div>
+        </div>
       </section>
       <section class="contact-container">
         <div class="openHours-container">
@@ -372,6 +382,12 @@
     <script src="app.js"></script>
     <!-- video -->
     <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+
+    <!--AOS Scripts-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     
   </body>

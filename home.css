@@ -6,10 +6,10 @@
 /* ! media max 576 */
 @media screen and (max-width: 576px) {
   .home-container {
-    display: flex;
     justify-content: center;
     align-items: center;
-
+    height: 100vh;
+    width: 100%;
     /* padding-top: 591.44px / 1127.34px * 100%; */
   }
 
