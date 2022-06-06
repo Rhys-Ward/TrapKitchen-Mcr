@@ -1,12 +1,140 @@
 @media screen and (max-width: 576px) {
   /* !open hours */
+  .contact-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(225, 225, 225);
+  }
+  .contact-container a {
+    text-decoration: underline;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .contact-heading {
+    width: 100%;
+    border-bottom: white solid 2px;
+    width: 90%;
+  }
+  .contact-container h2 {
+    color: white;
+    font-size: 2rem;
+
+    letter-spacing: 3px;
+    position: relative;
+    left: 0;
+    margin: 5% 0;
+  }
+  .map-container {
+    border-bottom: white solid 2px;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .maps {
+    border-radius: 2%;
+    margin: 5% 0;
+  }
   .openHours-container {
     z-index: 2;
     font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    border-bottom: solid rgb(255, 255, 255) 2px;
 
-    position: absolute;
-    bottom: 2%;
-    left: 5%;
-    width: 50%;
+    height: 40%;
+    width: 90%;
+    /* margin: 10% 0; */
+    padding-bottom: 15%;
+  }
+  .business-hours {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-container h3 {
+    margin-bottom: 2%;
+    font-size: 1.3rem;
+    color: white;
+  }
+  .contact-container p {
+    margin-top: 15%;
+  }
+
+  .times-and-clock {
+    display: flex;
+  }
+
+  .contact-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clocky {
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+  }
+
+  .clock2 {
+    stroke-dasharray: 176.51873779296875;
+    stroke-dashoffset: 176.51873779296875;
+    animation: clockAni1 2s ease-in forwards 1.8s;
+    stroke: rgb(255, 255, 255);
+  }
+
+  @keyframes clockAni1 {
+    to {
+      stroke-dashoffset: 0;
+    }
+    from {
+      stroke-dashoffset: 176.51873779296875;
+    }
+  }
+  .address-container1 {
+    z-index: 2;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: solid rgb(255, 255, 255) 2px;
+    /* border: yellow solid 2px; */
+    height: 30%;
+    width: 90%;
+    flex-direction: column;
+    margin: 10%;
+    padding-bottom: 20%;
+  }
+  .address-container1 h3 {
+    position: relative;
+    top: 0;
+  }
+  .address-and-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact {
+    z-index: 2;
+    font-family: "Kanit", sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid rgb(255, 255, 255) 2px;
+    height: 30%;
+    width: 90%;
+    margin: 10%;
+    padding-bottom: 20%;
   }
 }
