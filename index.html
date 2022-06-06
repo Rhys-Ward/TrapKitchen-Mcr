@@ -144,7 +144,7 @@
           <div class="clock-container">
             <svg
               class="clock"
-              viewBox="-1 -1 40 40"
+              viewBox="0 0 40 40"
               width="150"
               height="150"
               xmlns="http://www.w3.org/2000/svg"
@@ -180,20 +180,20 @@
        
       </section>
       <!-- !MENU -->
-      <section class="menu-container"  >
+      <section class="menu-container" id="menuContainer" >
         <h2 class="menu-title" data-aos="fade-up" data-aos-duration="2200">MENU</h2>
         
         <div  class="menu-headings" data-aos="fade-up" data-aos-duration="2200"> 
           <div class="heading-container" >
-            <h3 class="underline"  id="mains" style="z-index: 10; width: 100px;  " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
+            <h3 class="underline"  id="mains" style="z-index: 10;   " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
           </div>
           
           <div class="heading-container">
-          <h3 class="underline" id="sides" style="z-index: 10;  width: 100px; " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
+          <h3 class="underline " id="sides" style="z-index: 10;   " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
           </div>
           <div class="heading-container">
           
-            <h3 class="underline" id="drinks" style="z-index: 10; width: 100px; " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+            <h3 class="underline" id="drinks" style="z-index: 10;  " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
           </div>
           </div>  
           <p class="scroll-guide" data-aos="fade-up" data-aos-duration="2200">Scroll left/right for additional menu categories</p>  
@@ -312,8 +312,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
               <p> Spanish Rice</p>
@@ -321,8 +319,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
               <p> Spring Onion White Rice</p>
@@ -330,8 +326,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                 <div class="item-info" >
               <p> Teriyaki Rice</p>
@@ -339,8 +333,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                 <div class="item-info" >
               <p> Mashed Potatoes</p>
@@ -348,7 +340,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
               <p> Cheeto Wings</p>
@@ -357,52 +348,62 @@
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
               <p class="sides-info">(Served on their own)</p>
+              <div class="pageTop"  id="sides-top" >
+                <svg    class="arrow" width="20" height="20" viewBox="0 0 50 50"xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path id="arrow"d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                <a href="#menuContainer"  class="fine-print"><p  >Back to top</p></a>
+              </div>
             </div>
           </div>
+          
         </div>
         <!-- drinks -->
         <div class="drinks-container" >
           <div class="drinks-items-container" id="drinks-items-container" style="display: none;";  >
             <div class="drinks-container2" >
-              <div class="drinks-item " >
-                <p>- Rio</p>
-                <p class="price">£1:00</p>
+
+              <div class="item-info drinks-info" >
+                <p> Water </p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Fanta Orange</p>
-                <p class="price">£1:00</p>
+              <div class="item-info drinks-info" >
+                <p> Trap Medicine </p>
+                
+                <p class="price">£3.50</p>
+              
               </div>
-              <div class="drinks-item" >
-                <p>- Fanta Fruit Twist</p>
-                <p class="price">£1:00</p>
+              <div class="item-info drinks-info" >
+                <p> Lilt</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Water</p>
-                <p class="price">£1:00</p>
+              <div class="item-info drinks-info" >
+                <p> 7UP</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- 7UP</p>
-                <p class="price">£1:00</p>
+              <div class=" item-info drinks-info " >
+                <p> Rio</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Trap Medicine (Fruit Punch)</p>
-                <p class="price">£3:50</p>
+                    <div class="item-info drinks-info" >
+                <p> Fanta Orange</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Coca-Cola</p>
-                <p class="price">£1:00</p>
+              <div class="item-info drinks-info" >
+                <p> Fanta Fruit Twist</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Lilt</p>
-                <p class="price">£1:00</p>
+             
+              <div class="item-info drinks-info" >
+                <p> Coca-Cola</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Rubicon Mango</p>
-                <p class="price">£1:00</p>
+            
+              <div class="item-info drinks-info" >
+                <p> Rubicon Mango</p>
+                <p class="price">£1.00</p>
               </div>
-              <div class="drinks-item" >
-                <p>- Rubicon Guava</p>
-                <p class="price">£1:00</p>
+              <div class="item-info drinks-info" >
+                <p> Rubicon Guava</p>
+                <p class="price">£1.00</p>
               </div>
             </div>
           </div>
@@ -428,10 +429,17 @@
           
           <div class="contact-clock">
             <svg
+<<<<<<< HEAD
               class="clocky"
               viewBox="0 0 24 24"
               width="20"
               height="20"
+=======
+            viewBox="0 0 100 140" 
+              class=""
+              width="30"
+              height="30"
+>>>>>>> a38263a1dd71381d349bc194fd2ec2889ef19f2e
               xmlns="http://www.w3.org/2000/svg"
               fill-rule="evenodd"
               clip-rule="evenodd"

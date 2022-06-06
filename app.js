@@ -1,3 +1,8 @@
+let mains = document.getElementById("mains");
+let sides = document.getElementById("sides");
+let drinks = document.getElementById("drinks");
+let sidesTop = document.getElementById("sides-top");
+
 // ! nav burgerbar
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -37,18 +42,34 @@ window.onload = function () {
     "Open- 15:00 - 22:00",
     "Open- 15:00 - 22:00",
   ];
-
   document.getElementById("day").innerHTML = days[day];
-};
 
-//!Menu
+  mains.classList.add("mains-active");
+};
+// !Menu
+// mains-active
+sides.addEventListener("click", function (e) {
+  mains.classList.remove("mains-active");
+});
+drinks.addEventListener("click", function (e) {
+  mains.classList.remove("mains-active");
+  sides.classList.remove("mains-active");
+});
+mains.addEventListener("click", function (e) {
+  mains.classList.remove("mains-active");
+  sides.classList.remove("mains-active");
+});
+sidesTop.addEventListener("click", function (e) {
+  sides.classList.add("mains-active");
+});
 
 function replace(hide, hideOne, show) {
   document.getElementById(hide).style.display = "none";
   document.getElementById(hideOne).style.display = "none";
   document.getElementById(show).style.display = "flex";
 }
-
+arrow = document.getElementById("arrow");
+console.log(arrow.getTotalLength(), "i am arrow");
 // ! video
 document.querySelector("video").playbackRate = 0.7;
 
@@ -89,6 +110,7 @@ window.onscroll = () => {
     midALine.classList.add("trap-active");
     pLine.classList.add("trap-active");
     midPLine.classList.add("trap-active");
+    arrow.classList.add("arrow-active");
   } else {
     tLine.classList.remove("trap-active");
     rLine.classList.remove("trap-active");
@@ -97,6 +119,7 @@ window.onscroll = () => {
     midALine.classList.remove("trap-active");
     pLine.classList.remove("trap-active");
     midPLine.classList.remove("trap-active");
+    arrow.classList.remove("arrow-active");
   }
 };
 // !clock svg
