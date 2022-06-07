@@ -137,7 +137,10 @@
     width: 70%;
     font-size: 1.7rem;
   }
-
+  .mains-container h5,
+  .mains-container p {
+    opacity: 0;
+  }
   /* !SIDES */
 
   .sides-title {
@@ -154,7 +157,8 @@
     color: white;
     /* border: 2px solid blue; */
   }
-  .sides-container p {
+  .sides-container p,
+  .sides-container h5 {
     opacity: 0;
   }
   /* !DRINKS */
@@ -199,7 +203,9 @@
     text-decoration: none;
     color: white;
   }
-
+  .drinks-container p {
+    opacity: 0;
+  }
   /* back to top of page section */
   .arrow {
     stroke: white;

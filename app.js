@@ -3,6 +3,10 @@ let sidesTitle = document.getElementById("sides");
 let drinksTitle = document.getElementById("drinks");
 // scroll bck to top
 let sidesTop = document.getElementById("sides-top");
+let eachMain = document.querySelectorAll("#mains-container p");
+let mainHeading = document.querySelectorAll("#mains-container h5");
+
+let mainsContainer = document.getElementById("mains-container");
 
 // ! nav burgerbar
 const navSlide = () => {
@@ -45,43 +49,106 @@ window.onload = function () {
   ];
   document.getElementById("day").innerHTML = days[day];
 
-  mainsTitle.classList.add("mains-active");
+  // mainsTitle.classList.add("mains-active");
 };
 // !Menu
 // mains-active
+// ! sides onClick
 sidesTitle.addEventListener("click", function (e) {
   mainsTitle.classList.remove("mains-active");
+  let sideHeading = document.querySelectorAll("#side-container h5");
+  let eachSide = document.querySelectorAll("#side-container p");
+
+  sideHeading.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
+  eachSide.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
+// ! drinks Onclick
 drinks.addEventListener("click", function (e) {
   mainsTitle.classList.remove("mains-active");
   sidesTitle.classList.remove("mains-active");
+
+  let eachDrink = document.querySelectorAll("#drinks-container p");
+
+  eachDrink.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
+// ! mains onClick
 mainsTitle.addEventListener("click", function (e) {
   mainsTitle.classList.remove("mains-active");
   sidesTitle.classList.remove("mains-active");
+
+  // let eachMain = document.querySelectorAll("#mains-container p");
+  // let mainHeading = document.querySelectorAll("#mains-container h5");
+
+  mainHeading.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
+  eachMain.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
+
+// mains is set to 0 opacity
+
+// when user is on mains screen play class with animation in forwards
+// when sides or drinks are pressed remove animation class
+// when mains is clicked do this animation
+
+// back to top
 sidesTop.addEventListener("click", function (e) {
   sidesTitle.classList.add("mains-active");
 });
 
-const fadeUp = () => {
-  let eachSide = document.querySelectorAll("#side-container p");
-
-  sidesTitle.addEventListener("click", function (e) {
-    eachSide.forEach((item, index) => {
-      {
-        if (item.style.animation) {
-          item.style.animation = "";
-        } else {
-          item.style.animation = `fadeUp 500ms ease-in forwards ${
-            index / 25 + 0.2
-          }s`;
-          console.log(index / 7, "side item index");
-        }
-      }
-    });
-  });
-};
 ///////////////////
 
 function replace(hide, hideOne, show) {
@@ -121,7 +188,7 @@ midPLine = document.getElementById("P-Mid");
 console.log(midPLine.getTotalLength(), "i am mid p line");
 
 // !trap active
-
+// !onscroll
 window.onscroll = () => {
   if (window.scrollY > `${window.innerHeight}`) {
     tLine.classList.add("trap-active");
@@ -132,6 +199,36 @@ window.onscroll = () => {
     pLine.classList.add("trap-active");
     midPLine.classList.add("trap-active");
     arrow.classList.add("arrow-active");
+    // !mains
+    mainsTitle.classList.add("mains-active");
+
+    // every main title tag
+    mainHeading.forEach((item, index) => {
+      {
+        if (item.style.animation) {
+          item.style.animation = "";
+        } else {
+          item.style.animation = `fadeUp 400ms ease-in forwards ${
+            index / 25 + 0.1
+          }s`;
+          console.log(index / 7, "side item index");
+        }
+      }
+    });
+
+    // each p tag
+    eachMain.forEach((item, index) => {
+      {
+        if (item.style.animation) {
+          item.style.animation = "";
+        } else {
+          item.style.animation = `fadeUp 400ms ease-in forwards ${
+            index / 25 + 0.1
+          }s`;
+          console.log(index / 7, "side item index");
+        }
+      }
+    });
   } else {
     tLine.classList.remove("trap-active");
     rLine.classList.remove("trap-active");
@@ -181,6 +278,5 @@ window.initMap = initMap;
 // !all functions called within app
 const app = () => {
   navSlide();
-  fadeUp();
 };
 app();
