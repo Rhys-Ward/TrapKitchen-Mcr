@@ -1,6 +1,7 @@
-let mains = document.getElementById("mains");
-let sides = document.getElementById("sides");
-let drinks = document.getElementById("drinks");
+let mainsTitle = document.getElementById("mains");
+let sidesTitle = document.getElementById("sides");
+let drinksTitle = document.getElementById("drinks");
+// scroll bck to top
 let sidesTop = document.getElementById("sides-top");
 
 // ! nav burgerbar
@@ -44,24 +45,44 @@ window.onload = function () {
   ];
   document.getElementById("day").innerHTML = days[day];
 
-  mains.classList.add("mains-active");
+  mainsTitle.classList.add("mains-active");
 };
 // !Menu
 // mains-active
-sides.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
+sidesTitle.addEventListener("click", function (e) {
+  mainsTitle.classList.remove("mains-active");
 });
 drinks.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
-  sides.classList.remove("mains-active");
+  mainsTitle.classList.remove("mains-active");
+  sidesTitle.classList.remove("mains-active");
 });
-mains.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
-  sides.classList.remove("mains-active");
+mainsTitle.addEventListener("click", function (e) {
+  mainsTitle.classList.remove("mains-active");
+  sidesTitle.classList.remove("mains-active");
 });
 sidesTop.addEventListener("click", function (e) {
-  sides.classList.add("mains-active");
+  sidesTitle.classList.add("mains-active");
 });
+
+const fadeUp = () => {
+  let eachSide = document.querySelectorAll("#side-container p");
+
+  sidesTitle.addEventListener("click", function (e) {
+    eachSide.forEach((item, index) => {
+      {
+        if (item.style.animation) {
+          item.style.animation = "";
+        } else {
+          item.style.animation = `fadeUp 500ms ease-in forwards ${
+            index / 25 + 0.2
+          }s`;
+          console.log(index / 7, "side item index");
+        }
+      }
+    });
+  });
+};
+///////////////////
 
 function replace(hide, hideOne, show) {
   document.getElementById(hide).style.display = "none";
@@ -160,5 +181,6 @@ window.initMap = initMap;
 // !all functions called within app
 const app = () => {
   navSlide();
+  fadeUp();
 };
 app();
