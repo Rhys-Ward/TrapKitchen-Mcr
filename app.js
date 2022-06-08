@@ -210,30 +210,6 @@ console.log(pLine.getTotalLength(), "i am p line");
 midPLine = document.getElementById("P-Mid");
 console.log(midPLine.getTotalLength(), "i am mid p line");
 
-// const appearOptions = {
-//   threshold: 0.25,
-//   rootMargin: "0px 0px -50px 0px",
-// };
-// const appearOnScroll = new IntersectionObserver(function (
-//   entries,
-//   appearOnScroll
-// ) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       return;
-//       // entry.target.classList.remove("appear");
-//     } else {
-//       entry.target.classList.add("appear");
-//       // appearOnScroll.unobserve(entry.target);
-//     }
-//   });
-// },
-// appearOptions);
-
-// faders.forEach((fader) => {
-//   appearOnScroll.observe(fader);
-// });
-
 // !trap active
 // !onscroll
 window.onscroll = () => {
@@ -263,32 +239,13 @@ window.onscroll = () => {
 clock = document.getElementById("clock");
 console.log(clock.getTotalLength(), "i am clock");
 
-// ! MAP
-// Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//   const uluru = { lat: 53.48291522587735, lng: -2.208750210446786 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("googlemaps"), {
-//     zoom: 4,
-//     center: uluru,
-//   });
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
-
-// window.initMap = initMap;
-
 //! Scroll animation javascript
 const faders = document.querySelectorAll(".fade-up");
 const appearOptions = {
   threshold: 0.25,
   rootMargin: "0px 0px -50px 0px",
 };
-const appearOnScroll = new IntersectionObserver(function (
+const appearOnScroll1 = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
@@ -305,7 +262,7 @@ const appearOnScroll = new IntersectionObserver(function (
 appearOptions);
 
 faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+  appearOnScroll1.observe(fader);
 });
 
 let star1 = document.querySelector(".star-container");
