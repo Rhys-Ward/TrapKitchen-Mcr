@@ -210,6 +210,30 @@ console.log(pLine.getTotalLength(), "i am p line");
 midPLine = document.getElementById("P-Mid");
 console.log(midPLine.getTotalLength(), "i am mid p line");
 
+// const appearOptions = {
+//   threshold: 0.25,
+//   rootMargin: "0px 0px -50px 0px",
+// };
+// const appearOnScroll = new IntersectionObserver(function (
+//   entries,
+//   appearOnScroll
+// ) {
+//   entries.forEach((entry) => {
+//     if (!entry.isIntersecting) {
+//       return;
+//       // entry.target.classList.remove("appear");
+//     } else {
+//       entry.target.classList.add("appear");
+//       // appearOnScroll.unobserve(entry.target);
+//     }
+//   });
+// },
+// appearOptions);
+
+// faders.forEach((fader) => {
+//   appearOnScroll.observe(fader);
+// });
+
 // !trap active
 // !onscroll
 window.onscroll = () => {
@@ -241,22 +265,67 @@ console.log(clock.getTotalLength(), "i am clock");
 
 // ! MAP
 // Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  const uluru = { lat: 53.48291522587735, lng: -2.208750210446786 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("googlemaps"), {
-    zoom: 4,
-    center: uluru,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map: map,
-  });
-}
+// function initMap() {
+//   // The location of Uluru
+//   const uluru = { lat: 53.48291522587735, lng: -2.208750210446786 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(document.getElementById("googlemaps"), {
+//     zoom: 4,
+//     center: uluru,
+//   });
+//   // The marker, positioned at Uluru
+//   const marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map,
+//   });
+// }
 
-window.initMap = initMap;
+// window.initMap = initMap;
+
+//! Scroll animation javascript
+const faders = document.querySelectorAll(".fade-up");
+const appearOptions = {
+  threshold: 0.25,
+  rootMargin: "0px 0px -50px 0px",
+};
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+      // entry.target.classList.remove("appear");
+    } else {
+      entry.target.classList.add("appear");
+      // appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
+
+let star1 = document.querySelector(".star-container");
+let star2 = document.querySelector("#star-path");
+const starOptions = {
+  threshold: 0.25,
+  rootMargin: "0px 0px -50px 0px",
+};
+
+const starOnScroll = new IntersectionObserver(function (entries, starOnScroll) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      entry.target.classList.remove("star-line");
+    } else {
+      entry.target.classList.add("star-line");
+      console.log(entry);
+    }
+  });
+});
+starOnScroll.observe(star1);
 
 // !all functions called within app
 const app = () => {
