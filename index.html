@@ -53,10 +53,10 @@
         </div>
         <div class="nav-links">
           <ul class="nav-menuBox">
-            <li class="nav-menu"><a href="#">Home</a></li>
-            <li class="nav-menu"><a href="#">About Us</a></li>
-            <li class="nav-menu"><a href="#">Menu</a></li>
-            <li class="nav-menu"><a href="#">Contact Us</a></li>
+            <li class="nav-menu"><a href="#home-container">Home</a></li>
+            <li class="nav-menu"><a href="#about-container">About Us</a></li>
+            <li class="nav-menu"><a href="#menuContainer">Menu</a></li>
+            <li class="nav-menu"><a href="#contact-container">Contact Us</a></li>
           </ul>
 
           <ul class="nav-socials">
@@ -165,7 +165,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about-container" >
+      <section class="about-container" id="about-container" >
         <!-- !vidLine -->
         <!-- <div class="svgContainer">
         <svg  viewBox="0 0 1920 1080" stroke="white"  preserveAspectRatio="xMidYMax meet" data-directional="vertical" data.rate=".2" >
@@ -181,56 +181,60 @@
       </section>
       <!-- !MENU -->
       <section class="menu-container" id="menuContainer" >
-        <h2 class="menu-title" data-aos="fade-up" data-aos-duration="2200">MENU</h2>
-        
-        <div  class="menu-headings" data-aos="fade-up" data-aos-duration="2200"> 
+   
+        <h2 class="menu-title menu-fadeUp fadeUp">MENU</h2>
+    
+        <div  class="menu-headings" > 
           <div class="heading-container" >
-            <h3 class="underline"  id="mains" style="z-index: 10;   " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
+            <h3 class="underline menu-fadeUp fadeUp"  id="mains" style="z-index: 10;   " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
           </div>
           
           <div class="heading-container">
-          <h3 class="underline " id="sides" style="z-index: 10;   " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
+          <h3 class="underline menu-fadeUp fadeUp" id="sides" style="z-index: 10;   " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
           </div>
           <div class="heading-container">
           
-            <h3 class="underline" id="drinks" style="z-index: 10;  " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+            <h3 class="underline menu-fadeUp fadeUp" id="drinks" style="z-index: 10;  " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
           </div>
           </div>  
-          <p class="scroll-guide" data-aos="fade-up" data-aos-duration="2200">Scroll left/right for additional menu categories</p>  
+          <div>
+            <p class="scroll-guide menu-fadeUp fadeUp">Scroll left/right for additional menu categories</p> 
+          </div>
+          
                   
           <!--! menu box  -->
           <div class="menu-box">
           
-            <p class="menu-info" data-aos="fade-up" data-aos-duration="2200">Opening Times today:</p>
-            <h4 class="menu-info takeout" data-aos="fade-up" data-aos-duration="2200">For takeout only</h4>
+            <p class="menu-info menu-fadeUp fadeUp">Opening Times today:</p>
+            <h4 class="menu-info takeout menu-fadeUp fadeUp" >For takeout only</h4>
           <!-- ! mains -->
         <div class="mains-container"  style="display: flex;">
           <div class="mains-items-container" id="mains-items-container"  >
             <div class="mains-container2" id="mains-container" >
 
               <div class="mains-item" >
-                <div class="item-info">
+                <div class="item-info menu-fadeUp fadeUp">
               <h5 class="mains-title">Chicken Combo</h5>
               <p class="mains-price">£12.00</p>
               
             </div>
-              <p class="mains-description">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
+              <p class="mains-description menu-fadeUp fadeUp">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
            
               </div>
               <div class="mains-item">
-                <div class="item-info">
+                <div class="item-info menu-fadeUp fadeUp">
               <h5 class="mains-title">Seafood Combo</h5>
               <p class="mains-price">£18.00</p>
             </div>
-              <p class="mains-description">Enjoy your chosen Seafood, with two sides.</p>
+              <p class="mains-description menu-fadeUp fadeUp">Enjoy your chosen Seafood, with two sides.</p>
               
               </div>
               <div class="mains-item">
-                <div class="item-info">
+                <div class="item-info menu-fadeUp fadeUp">
               <h5 class="mains-title">Ballers Combo</h5>
               <p class="mains-price">£12.00</p>
               </div>
-              <p class="mains-description">Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
+              <p class="mains-description menu-fadeUp fadeUp">Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
               
               </div>
             </div>
@@ -243,17 +247,13 @@
 
             <div class="sides-container2" id="side-container" >
           
-              <!-- <div class="sides-item" > -->
               <div class="mains-item"   >
               <div class="item-info  "  >
-                <!-- <div class="sides-title"> -->
               <h5 > Seasoned Lobster Tail</h5>
-              <!-- </div> -->
               <p class="price">£7.50</p>
               </div>
               <p class="mains-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, repudiandae! Modi.</p>
               </div>
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item " >
                   <div class="item-info" >
               <h5> Seasoned Salmon</h5>
@@ -261,7 +261,6 @@
               </div>
               <p class="mains-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, neque.</p>
                 </div>
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item " >
                 <div class="item-info" >
               <h5> Crab Legs</h5>
@@ -269,7 +268,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
                 </div>
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                 <div class="item-info" >
               <h5> Bang Bang Prawns</h5>
@@ -277,7 +275,6 @@
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
               <h5> Tiger Prawns</h5>
@@ -286,25 +283,22 @@
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
 
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
-              <hhh5> Chicken</hhh5>
+              <h5> Chicken</h5>
               <p class="price">£6.00</p>
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
 
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
-              <hh5> Mac N Cheese</hh5>
+              <h5> Mac N Cheese</h5>
               <p class="price">£6.00</p>
               </div>
               <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
             </div>
 
-              <!-- <div class="sides-item" > -->
                 <div class="mains-item" >
                   <div class="item-info" >
               <h5> Alfredo Pasta</h5>
@@ -349,8 +343,11 @@
             </div>
               <p class="sides-info">(Served on their own)</p>
               <div class="pageTop"  id="sides-top" >
-                <svg    class="arrow" width="20" height="20" viewBox="0 0 50 50"xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path id="arrow"d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
-                <a href="#menuContainer"  class="fine-print"><p  >Back to top</p></a>
+                <a href="#menuContainer"  class="fine-print">
+                <div class="arrow-container">
+                <svg    class="arrow" width="20" height="20" viewBox="-20 -10 50 50"xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path id="arrow"d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                </div>
+               <p  >Back to top</p></a>
               </div>
             </div>
           </div>
@@ -411,7 +408,7 @@
         </div>
       </section>
       <!-- contact -->
-      <section class="contact-container">
+      <section class="contact-container" id="contact-container">
         <div class="contact-heading">
 
           <h2>Contact Us</h2>
@@ -420,13 +417,9 @@
 
           <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.197353724355!2d-2.2108047841563994!3d53.48280348000777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb13e876a2e33%3A0x4b12378ea829547b!2sTrap%20Kitchen%20MCR!5e0!3m2!1sen!2suk!4v1654522086109!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-          
         
         <div class="openHours-container">
-          
-          
-           
-          
+        
           <div class="contact-clock">
             <svg
               class="clocky"
@@ -458,15 +451,10 @@
             
             </p>
           </div>
-        
-           
           </div>
           <div class="address-container1">
             <a href="https://www.google.com/maps/dir//Trap+Kitchen+Mcr/@53.482783,-2.2786556,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487bb13e876a2e33:0x4b12378ea829547b!2m2!1d-2.2086161!2d53.4828035"><h3>Get Directions here</h3></a>
             <div class="address-and-link">
-
-             
-
                <p>6-8 Hillkirk Street <br>
                    Beswick<br>
                    M11 3EZ <br>
@@ -497,11 +485,7 @@
     <script>
       AOS.init();
     </script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-      defer
-    ></script>
-
+    
   
 
     
