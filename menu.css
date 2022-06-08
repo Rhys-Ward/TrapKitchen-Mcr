@@ -102,6 +102,7 @@
     width: 100%;
     height: 100%;
   }
+
   .mains-container2,
   .sides-container2 {
     /* border: 2px solid blue; */
@@ -153,6 +154,11 @@
     color: white;
     /* border: 2px solid blue; */
   }
+  .sides-container p,
+  .sides-container h5,
+  .drinks-container p {
+    opacity: 0;
+  }
   /* !DRINKS */
   .drinks-items-container {
     display: flex;
@@ -172,13 +178,14 @@
 
   .drinks-info {
     /* border: 2px solid blue; */
-
     margin-bottom: 10%;
   }
 
   .drinks-item p.price {
     margin-left: auto;
   }
+
+  /* back to top of page section */
   /* fine print */
   .pageTop {
     /* border: 2px solid red; */
@@ -187,17 +194,22 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     margin-left: 70vw;
     cursor: pointer;
   }
+
   .pageTop a {
     text-decoration: none;
     color: white;
   }
 
-  /* back to top of page section */
+  .arrow-container {
+    /* border: 2px solid red; */
+    justify-content: center;
+    display: flex;
+  }
   .arrow {
+    /* border: 2px solid blue; */
     stroke: white;
     height: auto;
     animation: arrowBounce 2s ease-in-out infinite;
@@ -231,6 +243,40 @@
     }
     from {
       stroke-dashoffset: 95.950610351565;
+    }
+  }
+
+  /* fade in menu animation */
+  .menu-fadeUp {
+    opacity: 0;
+    transition: opacity 300ms ease-in forwards;
+  }
+
+  .menu-fadeUp.appear {
+    opacity: 1;
+  }
+
+  .fadeUp {
+    transform: translateY(50%);
+    transition: transform 400ms ease-in;
+  }
+  .fadeUp.appear {
+    transform: translateY(0);
+  }
+  /* animation once page is loaded in */
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(7px);
+
+      opacity: 0;
+    }
+    75% {
+      opacity: 0.8;
+      transform: translateY(3px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
     }
   }
 }

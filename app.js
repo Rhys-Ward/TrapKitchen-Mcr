@@ -1,8 +1,14 @@
-let mains = document.getElementById("mains");
-let sides = document.getElementById("sides");
-let drinks = document.getElementById("drinks");
+// menu
+let mainsTitle = document.getElementById("mains");
+let sidesTitle = document.getElementById("sides");
+let drinksTitle = document.getElementById("drinks");
+// scroll bck to top
 let sidesTop = document.getElementById("sides-top");
-
+let eachMain = document.querySelectorAll("#mains-container p");
+let mainHeading = document.querySelectorAll("#mains-container h5");
+let mainsContainer = document.getElementById("mains-container");
+let menuSection = document.querySelectorAll(".menu-fadeUp ");
+//////////////////////////////////////////
 // ! nav burgerbar
 const navSlide = () => {
   const burger = document.querySelector(".burger");
@@ -44,23 +50,125 @@ window.onload = function () {
   ];
   document.getElementById("day").innerHTML = days[day];
 
-  mains.classList.add("mains-active");
+  // mainsTitle.classList.add("mains-active");
 };
 // !Menu
+
+// ! menu observer
+const options = {
+  root: null, // itis the view port
+  threshold: 0.6, // between 0-1, 0 being once it hits the page, and 1 being when all the page is in the viewport
+  rootMargin: "-0px 0px -100px 0px", // set in px or % only
+};
+
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      console.log(entry.target, "i am entry target");
+      entry.target.classList.add("appear");
+      mainsTitle.classList.add("mains-active");
+
+      // stops observing
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+options);
+// each menu section - fadeup class
+menuSection.forEach((item) => {
+  appearOnScroll.observe(item);
+});
+
 // mains-active
-sides.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
+// ! sides onClick
+sidesTitle.addEventListener("click", function (e) {
+  mainsTitle.classList.remove("mains-active");
+
+  let sideHeading = document.querySelectorAll("#side-container h5");
+  let eachSide = document.querySelectorAll("#side-container p");
+
+  /////////////////////////
+
+  sideHeading.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
+  eachSide.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
+// ! drinks Onclick
 drinks.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
-  sides.classList.remove("mains-active");
+  mainsTitle.classList.remove("mains-active");
+
+  let eachDrink = document.querySelectorAll("#drinks-container p");
+
+  eachDrink.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
-mains.addEventListener("click", function (e) {
-  mains.classList.remove("mains-active");
-  sides.classList.remove("mains-active");
+// ! mains onClick
+mainsTitle.addEventListener("click", function (e) {
+  mainHeading.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.2
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
+  eachMain.forEach((item, index) => {
+    {
+      if (item.style.animation) {
+        item.style.animation = "";
+      } else {
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
+        console.log(index / 7, "side item index");
+      }
+    }
+  });
 });
+
+// back to top
 sidesTop.addEventListener("click", function (e) {
-  sides.classList.add("mains-active");
+  sidesTitle.classList.add("mains-active");
 });
 
 function replace(hide, hideOne, show) {
@@ -70,6 +178,9 @@ function replace(hide, hideOne, show) {
 }
 arrow = document.getElementById("arrow");
 console.log(arrow.getTotalLength(), "i am arrow");
+
+///////////////////////////////////////////////////////
+
 // ! video
 document.querySelector("video").playbackRate = 0.7;
 
@@ -99,32 +210,8 @@ console.log(pLine.getTotalLength(), "i am p line");
 midPLine = document.getElementById("P-Mid");
 console.log(midPLine.getTotalLength(), "i am mid p line");
 
-// const appearOptions = {
-//   threshold: 0.25,
-//   rootMargin: "0px 0px -50px 0px",
-// };
-// const appearOnScroll = new IntersectionObserver(function (
-//   entries,
-//   appearOnScroll
-// ) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) {
-//       return;
-//       // entry.target.classList.remove("appear");
-//     } else {
-//       entry.target.classList.add("appear");
-//       // appearOnScroll.unobserve(entry.target);
-//     }
-//   });
-// },
-// appearOptions);
-
-// faders.forEach((fader) => {
-//   appearOnScroll.observe(fader);
-// });
-
 // !trap active
-
+// !onscroll
 window.onscroll = () => {
   if (window.scrollY > `${window.innerHeight}`) {
     tLine.classList.add("trap-active");
@@ -135,6 +222,8 @@ window.onscroll = () => {
     pLine.classList.add("trap-active");
     midPLine.classList.add("trap-active");
     arrow.classList.add("arrow-active");
+    // !mains
+    // mainsTitle.classList.add("mains-active");
   } else {
     tLine.classList.remove("trap-active");
     rLine.classList.remove("trap-active");
@@ -149,37 +238,6 @@ window.onscroll = () => {
 // !clock svg
 clock = document.getElementById("clock");
 console.log(clock.getTotalLength(), "i am clock");
-// let path = document.querySelectorAll(" svg path");
-// i = 0;
-// path.forEach(function (item, index) {
-//   i++;
-//   const pathLength = item.getTotalLength();
-
-//   item.setAttribute("stroke-dasharray", pathLength / 2);
-//   item.setAttribute("stroke-dashoffset", pathLength / 2);
-//   item.innerHTML =
-//     "<animate  attributeName = 'stroke-dashoffset' begin = '5s' dur='5s' to='0'fill='freeze'/>";
-
-//   console.log(index, pathLength, item.innerHTML);
-// });
-
-// Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//   const uluru = { lat: 53.48291522587735, lng: -2.208750210446786 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("googlemaps"), {
-//     zoom: 4,
-//     center: uluru,
-//   });
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
-
-// window.initMap = initMap;
 
 //! Scroll animation javascript
 const faders = document.querySelectorAll(".fade-up");
@@ -187,7 +245,7 @@ const appearOptions = {
   threshold: 0.25,
   rootMargin: "0px 0px -50px 0px",
 };
-const appearOnScroll = new IntersectionObserver(function (
+const appearOnScroll1 = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
@@ -204,7 +262,7 @@ const appearOnScroll = new IntersectionObserver(function (
 appearOptions);
 
 faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+  appearOnScroll1.observe(fader);
 });
 
 let star1 = document.querySelector(".star-container");
