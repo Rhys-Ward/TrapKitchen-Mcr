@@ -288,7 +288,7 @@ const appearOptions = {
   threshold: 0.25,
   rootMargin: "0px 0px -50px 0px",
 };
-const appearOnScroll = new IntersectionObserver(function (
+const appearOnScroll1 = new IntersectionObserver(function (
   entries,
   appearOnScroll
 ) {
@@ -305,7 +305,7 @@ const appearOnScroll = new IntersectionObserver(function (
 appearOptions);
 
 faders.forEach((fader) => {
-  appearOnScroll.observe(fader);
+  appearOnScroll1.observe(fader);
 });
 
 let star1 = document.querySelector(".star-container");
