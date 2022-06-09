@@ -218,7 +218,7 @@
     fill: rgb(242, 73, 73);
   }
 
-  .svg-scroll-line {
+  .svg-scroll-line1 {
     z-index: 100;
     position: absolute;
     top: 0vh;
@@ -229,12 +229,13 @@
     top: 20vh;
   }
   .scroll-line1 {
-    stroke: red;
+    stroke: blue;
     height: 20vh;
     width: 100%;
     stroke-width: 5;
   }
   .scroll-line2 {
+    stroke: green;
     height: 15vh;
     width: 100%;
     stroke-width: 5;
@@ -246,7 +247,7 @@
   }
 
   .scroll-line1-ani {
-    stroke: rgb(242, 73, 73);
+    /* stroke: rgb(242, 73, 73); */
 
     stroke-dasharray: 218;
     stroke-dashoffset: 218;
@@ -258,7 +259,7 @@
   }
 
   .scroll-line2-ani {
-    stroke: rgb(242, 73, 73);
+    /* stroke: rgb(242, 73, 73); */
 
     stroke-dasharray: 218;
     stroke-dashoffset: 218;
