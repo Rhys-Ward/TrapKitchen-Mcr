@@ -240,8 +240,13 @@ window.onscroll = () => {
 clock = document.getElementById("clock");
 console.log(clock.getTotalLength(), "i am clock");
 
+//!Contact
+line = document.querySelector("#scroll-line3");
+console.log(line.getTotalLength(), "I am line");
+
 //! Scroll animation javascript
-const faders = document.querySelectorAll(".fade-up");
+const faders = document.querySelectorAll(".fade-left");
+const contactFaders = document.querySelector(".fade-up");
 const appearOptions = {
   threshold: 0.25,
   rootMargin: "0px 0px -50px 0px",
@@ -256,6 +261,8 @@ const appearOnScroll1 = new IntersectionObserver(function (
       // entry.target.classList.remove("appear");
     } else {
       entry.target.classList.add("appear");
+      contactFaders.classList.add("appear1");
+      line.classList.add("scroll-line2-ani");
       // appearOnScroll.unobserve(entry.target);
     }
   });

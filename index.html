@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styling/main.css" />
     <link rel="stylesheet" href="styling/home.css" />
     <link rel="stylesheet" href="styling/about.css" />
-    <link rel="stylesheet" href="styling/menu.css">
-    <link rel="stylesheet" href="styling/contact.css">
+    <link rel="stylesheet" href="styling/menu.css" />
+    <link rel="stylesheet" href="styling/contact.css" />
     <!-- !Website Icon-->
     <link rel="icon" type="image/x-icon" href="images/logo__1_-removebg-preview.png" />
     <!-- !social icons -->
@@ -22,7 +22,6 @@
 
     <!-- AOS Link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
 
     <title>Trap Kitchen Mcr</title>
   </head>
@@ -32,31 +31,68 @@
     <div class="container">
       <!-- !NAV -->
       <nav class="nav" id="nav">
-       <div class="logo-container">
-        <div class="logo">
-          <svg   class="trap"   version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="300 300 400 200" width="150" height="150">
-            <title>logo (2)</title>
-            
-            <path id="T"    class="s0 trap-active"  d="m215 383l-48-1 6-39h145l-5 40h-49l-18 104h-46z"/>
-            <path id="R" class="s1 trap-active" d="m322.6 488.2l22.4-146.2h97l20 7 12 9 5 12 2 13-1 14-4 12-3 9-7 7-6 5-8 5-6 2 26.1 51.1-53.1-0.1-24-48-18 0.1-6.5 48.1z"/>
-            <path id="R-Mid" class="s1-mid trap-active" d="m419 381l7 1 5 3 1 7-4 7-9 3h-35l3-22z"/>
-            <path id="A" class="s2 trap-active" d="m490 488l84-146h49l38 145h-52l-4-23h-51l-12 24z"/>
-            <path id="A-Mid"  class="s2-mid trap-active" d="m593 385l5 44h-26z"/>
-            <path id="P" class="s3 trap-active" d="m678.7 487.5l22.3-144.5h96l18 5 9 7 6 10 4 13 1 16-4 15-6 12-9 10-10 7-16 6-21 1h-20-17l-4.6 42.7z"/>
-            <path id="P-Mid" class="s3-mid trap-active" d="m773.1 381.2l7.2 1.3 4.3 7.4-0.6 6.1-3 7-10.1 2.5-30.4-0.1 2.5-24.4z"/>
-          </svg>
-          <!-- <img class="logo" src="images/trapkitchen1.png" alt="logo" />  -->
-        </div> 
-        <div class="kitchen-logo">
-         <img  src="images/kitchen.png" alt="logo" /> 
-        </div>
+        <div class="logo-container">
+          <div class="logo">
+            <svg
+              class="trap"
+              version="1.2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="300 300 400 200"
+              width="150"
+              height="150"
+            >
+              <title>logo (2)</title>
+
+              <path
+                id="T"
+                class="s0 trap-active"
+                d="m215 383l-48-1 6-39h145l-5 40h-49l-18 104h-46z"
+              />
+              <path
+                id="R"
+                class="s1 trap-active"
+                d="m322.6 488.2l22.4-146.2h97l20 7 12 9 5 12 2 13-1 14-4 12-3 9-7 7-6 5-8 5-6 2 26.1 51.1-53.1-0.1-24-48-18 0.1-6.5 48.1z"
+              />
+              <path
+                id="R-Mid"
+                class="s1-mid trap-active"
+                d="m419 381l7 1 5 3 1 7-4 7-9 3h-35l3-22z"
+              />
+              <path
+                id="A"
+                class="s2 trap-active"
+                d="m490 488l84-146h49l38 145h-52l-4-23h-51l-12 24z"
+              />
+              <path
+                id="A-Mid"
+                class="s2-mid trap-active"
+                d="m593 385l5 44h-26z"
+              />
+              <path
+                id="P"
+                class="s3 trap-active"
+                d="m678.7 487.5l22.3-144.5h96l18 5 9 7 6 10 4 13 1 16-4 15-6 12-9 10-10 7-16 6-21 1h-20-17l-4.6 42.7z"
+              />
+              <path
+                id="P-Mid"
+                class="s3-mid trap-active"
+                d="m773.1 381.2l7.2 1.3 4.3 7.4-0.6 6.1-3 7-10.1 2.5-30.4-0.1 2.5-24.4z"
+              />
+            </svg>
+            <!-- <img class="logo" src="images/trapkitchen1.png" alt="logo" />  -->
+          </div>
+          <div class="kitchen-logo">
+            <img src="images/kitchen.png" alt="logo" />
+          </div>
         </div>
         <div class="nav-links">
           <ul class="nav-menuBox">
             <li class="nav-menu"><a href="#home-container">Home</a></li>
             <li class="nav-menu"><a href="#about-container">About Us</a></li>
             <li class="nav-menu"><a href="#menuContainer">Menu</a></li>
-            <li class="nav-menu"><a href="#contact-container">Contact Us</a></li>
+            <li class="nav-menu">
+              <a href="#contact-container">Contact Us</a>
+            </li>
           </ul>
 
           <ul class="nav-socials">
@@ -94,18 +130,22 @@
          >
           <image href="images/burgerBar.svg" height="100" width="100"/>
         </svg> -->
-        
         </div>
       </nav>
       <!-- !HOME -->
-      <section id="home-container" class="home-container" data-directional="vertical" data.rate=".4">
-         <!-- !vidLine -->
-         <div class="svgContainer1">
+      <section
+        id="home-container"
+        class="home-container"
+        data-directional="vertical"
+        data.rate=".4"
+      >
+        <!-- !vidLine -->
+        <div class="svgContainer1">
           <!-- <svg class="vidLine1" viewBox="330 0 600 844" 
             <path  id="topline" class="s0" d="m316 172h378l41.8 41.8h225.2" />
           </svg> -->
         </div>
-         <div class="svgContainer2">
+        <div class="svgContainer2">
           <!-- <svg class="vidLine2" viewBox="330 0 600 844" >
             
              
@@ -114,12 +154,20 @@
          
           </svg> -->
         </div>
-        <div class="videobg">   </div>
-        <div class="videobg2">   </div>
-        <div class="video-container"><video src="./images/pexels-manc.mp4" type="mp4" autoplay muted loop ></video></div>
+        <div class="videobg"></div>
+        <div class="videobg2"></div>
+        <div class="video-container">
+          <video
+            src="./images/pexels-manc.mp4"
+            type="mp4"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
         <div class="vidFade"></div>
-    
-      <!-- address -->
+
+        <!-- address -->
         <div class="address-container">
           <div class="pin-container">
             <svg
@@ -134,12 +182,14 @@
               />
             </svg>
           </div>
-          <a href="https://www.google.com/maps/dir//Trap+Kitchen+Mcr/@53.482783,-2.2786556,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487bb13e876a2e33:0x4b12378ea829547b!2m2!1d-2.2086161!2d53.4828035" target="_blank">
+          <a
+            href="https://www.google.com/maps/dir//Trap+Kitchen+Mcr/@53.482783,-2.2786556,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487bb13e876a2e33:0x4b12378ea829547b!2m2!1d-2.2086161!2d53.4828035"
+            target="_blank"
+          >
             <p>
               6-8 Hillkirk Street <br />
               Beswick <br />
             </p>
-
           </a>
         </div>
         <!-- date -->
@@ -154,21 +204,20 @@
               fill-rule="evenodd"
               clip-rule="evenodd"
             >
-              <path class="clock1" id="clock"
+              <path
+                class="clock1"
+                id="clock"
                 d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z"
               />
             </svg>
           </div>
-            <a class="opening-times-btn" href="" >
-            <div id="day"> 
-              
-            </div>
+          <a class="opening-times-btn" href="">
+            <div id="day"></div>
           </a>
-          
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about-container" id="about-container" >
+      <section class="about-container" id="about-container">
         <!-- !vidLine -->
         <!-- <div class="svgContainer">
         <svg  viewBox="0 0 1920 1080" stroke="white"  preserveAspectRatio="xMidYMax meet" data-directional="vertical" data.rate=".2" >
@@ -177,269 +226,379 @@
         </svg>
         </div> -->
         <div class="logocontainer">
-        <img src="images/CONCEPT.png" alt="" class="conceptlogo">
-      </div>
+          <img src="images/CONCEPT.png" alt="" class="conceptlogo" />
+        </div>
         <h3>DASHA IS HERE</h3>
-       
       </section>
       <!-- !MENU -->
-      <section class="menu-container" id="menuContainer" >
-   
+      <section class="menu-container" id="menuContainer">
         <h2 class="menu-title menu-fadeUp fadeUp">MENU</h2>
-    
-        <div  class="menu-headings" > 
-          <div class="heading-container" >
-            <h3 class="underline menu-fadeUp fadeUp"  id="mains" style="z-index: 10;   " onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')">Mains</h3>            
-          </div>
-          
+
+        <div class="menu-headings">
           <div class="heading-container">
-          <h3 class="underline menu-fadeUp fadeUp" id="sides" style="z-index: 10;   " onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')">Sides</h3>
+            <h3
+              class="underline menu-fadeUp fadeUp"
+              id="mains"
+              style="z-index: 10"
+              onclick="replace('side-items-container', 'drinks-items-container', 'mains-items-container')"
+            >
+              Mains
+            </h3>
+          </div>
+
+          <div class="heading-container">
+            <h3
+              class="underline menu-fadeUp fadeUp"
+              id="sides"
+              style="z-index: 10"
+              onclick="replace('mains-items-container', 'drinks-items-container', 'side-items-container')"
+            >
+              Sides
+            </h3>
           </div>
           <div class="heading-container">
-          
-            <h3 class="underline menu-fadeUp fadeUp" id="drinks" style="z-index: 10;  " onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')">Drinks</h3>
+            <h3
+              class="underline menu-fadeUp fadeUp"
+              id="drinks"
+              style="z-index: 10"
+              onclick="replace('mains-items-container', 'side-items-container', 'drinks-items-container')"
+            >
+              Drinks
+            </h3>
           </div>
-          </div>  
-          <div>
-            <p class="scroll-guide menu-fadeUp fadeUp">Scroll left/right for additional menu categories</p> 
-          </div>
-          
-                  
-          <!--! menu box  -->
-          <div class="menu-box">
-          
-            <p class="menu-info menu-fadeUp fadeUp">Opening Times today:</p>
-            <h4 class="menu-info takeout menu-fadeUp fadeUp" >For takeout only</h4>
+        </div>
+        <div>
+          <p class="scroll-guide menu-fadeUp fadeUp">
+            Scroll left/right for additional menu categories
+          </p>
+        </div>
+
+        <!--! menu box  -->
+        <div class="menu-box">
+          <p class="menu-info menu-fadeUp fadeUp">Opening Times today:</p>
+          <h4 class="menu-info takeout menu-fadeUp fadeUp">For takeout only</h4>
           <!-- ! mains -->
-        <div class="mains-container"  style="display: flex;">
-          <div class="mains-items-container" id="mains-items-container"  >
-            <div class="mains-container2" id="mains-container" >
-
-              <div class="mains-item" >
-                <div class="item-info menu-fadeUp fadeUp">
-              <h5 class="mains-title">Chicken Combo</h5>
-              <p class="mains-price">£12.00</p>
-              
-            </div>
-              <p class="mains-description menu-fadeUp fadeUp">Pick a seasoning for your Chicken combo. Comes with two sides.</p>
-           
-              </div>
-              <div class="mains-item">
-                <div class="item-info menu-fadeUp fadeUp">
-              <h5 class="mains-title">Seafood Combo</h5>
-              <p class="mains-price">£18.00</p>
-            </div>
-              <p class="mains-description menu-fadeUp fadeUp">Enjoy your chosen Seafood, with two sides.</p>
-              
-              </div>
-              <div class="mains-item">
-                <div class="item-info menu-fadeUp fadeUp">
-              <h5 class="mains-title">Ballers Combo</h5>
-              <p class="mains-price">£12.00</p>
-              </div>
-              <p class="mains-description menu-fadeUp fadeUp">Enjoy your chosen Seafood, with two sides. Chicken and Prawns are automatically included in the Baller Box</p>
-              
-              </div>
-            </div>
-            </div>
-    
-        </div>
-        <!-- SIDES -->
-        <div class="sides-container"   >
-          <div class="side-items-container  "  style="display:none;" id="side-items-container">
-
-            <div class="sides-container2" id="side-container" >
-          
-              <div class="mains-item"   >
-              <div class="item-info  "  >
-              <h5 > Seasoned Lobster Tail</h5>
-              <p class="price">£7.50</p>
-              </div>
-              <p class="mains-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, repudiandae! Modi.</p>
-              </div>
-                <div class="mains-item " >
-                  <div class="item-info" >
-              <h5> Seasoned Salmon</h5>
-              <p class="price">£7.50</p>
-              </div>
-              <p class="mains-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, neque.</p>
+          <div class="mains-container" style="display: flex">
+            <div class="mains-items-container" id="mains-items-container">
+              <div class="mains-container2" id="mains-container">
+                <div class="mains-item">
+                  <div class="item-info menu-fadeUp fadeUp">
+                    <h5 class="mains-title">Chicken Combo</h5>
+                    <p class="mains-price">£12.00</p>
+                  </div>
+                  <p class="mains-description menu-fadeUp fadeUp">
+                    Pick a seasoning for your Chicken combo. Comes with two
+                    sides.
+                  </p>
                 </div>
-                <div class="mains-item " >
-                <div class="item-info" >
-              <h5> Crab Legs</h5>
-              <p class="price">£7.50</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
+                <div class="mains-item">
+                  <div class="item-info menu-fadeUp fadeUp">
+                    <h5 class="mains-title">Seafood Combo</h5>
+                    <p class="mains-price">£18.00</p>
+                  </div>
+                  <p class="mains-description menu-fadeUp fadeUp">
+                    Enjoy your chosen Seafood, with two sides.
+                  </p>
                 </div>
-                <div class="mains-item" >
-                <div class="item-info" >
-              <h5> Bang Bang Prawns</h5>
-              <p class="price">£7.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Tiger Prawns</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Chicken</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Mac N Cheese</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Alfredo Pasta</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Spanish Rice</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Spring Onion White Rice</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                <div class="item-info" >
-              <h5> Teriyaki Rice</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                <div class="item-info" >
-              <h5> Mashed Potatoes</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-                <div class="mains-item" >
-                  <div class="item-info" >
-              <h5> Cheeto Wings</h5>
-              <p class="price">£6.00</p>
-              </div>
-              <p class="mains-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, modi.</p>
-            </div>
-              <p class="sides-info">(Served on their own)</p>
-              <div class="pageTop"  id="sides-top" >
-                <a href="#menuContainer"  class="fine-print">
-                <div class="arrow-container">
-                <svg    class="arrow" width="20" height="20" viewBox="-20 -10 50 50"xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path id="arrow"d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg>
+                <div class="mains-item">
+                  <div class="item-info menu-fadeUp fadeUp">
+                    <h5 class="mains-title">Ballers Combo</h5>
+                    <p class="mains-price">£12.00</p>
+                  </div>
+                  <p class="mains-description menu-fadeUp fadeUp">
+                    Enjoy your chosen Seafood, with two sides. Chicken and
+                    Prawns are automatically included in the Baller Box
+                  </p>
                 </div>
-               <p  >Back to top</p></a>
               </div>
             </div>
           </div>
-          
-        </div>
-        <!-- drinks -->
-        <div class="drinks-container"  >
-          <div class="drinks-items-container" id="drinks-items-container" style="display: none;";  >
-            <div class="drinks-container2" id="drinks-container" >
+          <!-- SIDES -->
+          <div class="sides-container">
+            <div
+              class="side-items-container"
+              style="display: none"
+              id="side-items-container"
+            >
+              <div class="sides-container2" id="side-container">
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Seasoned Lobster Tail</h5>
+                    <p class="price">£7.50</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Dicta, repudiandae! Modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Seasoned Salmon</h5>
+                    <p class="price">£7.50</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                    neque.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Crab Legs</h5>
+                    <p class="price">£7.50</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Bang Bang Prawns</h5>
+                    <p class="price">£7.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Tiger Prawns</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
 
-              <div class="item-info drinks-info" >
-                <p> Water </p>
-                <p class="price">£1.00</p>
-              </div>
-              <div class="item-info drinks-info" >
-                <p> Trap Medicine </p>
-                
-                <p class="price">£3.50</p>
-              
-              </div>
-              <div class="item-info drinks-info" >
-                <p> Lilt</p>
-                <p class="price">£1.00</p>
-              </div>
-              <div class="item-info drinks-info" >
-                <p> 7UP</p>
-                <p class="price">£1.00</p>
-              </div>
-              <div class=" item-info drinks-info " >
-                <p> Rio</p>
-                <p class="price">£1.00</p>
-              </div>
-                    <div class="item-info drinks-info" >
-                <p> Fanta Orange</p>
-                <p class="price">£1.00</p>
-              </div>
-              <div class="item-info drinks-info" >
-                <p> Fanta Fruit Twist</p>
-                <p class="price">£1.00</p>
-              </div>
-             
-              <div class="item-info drinks-info" >
-                <p> Coca-Cola</p>
-                <p class="price">£1.00</p>
-              </div>
-            
-              <div class="item-info drinks-info" >
-                <p> Rubicon Mango</p>
-                <p class="price">£1.00</p>
-              </div>
-              <div class="item-info drinks-info" >
-                <p> Rubicon Guava</p>
-                <p class="price">£1.00</p>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Chicken</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Mac N Cheese</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Alfredo Pasta</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Spanish Rice</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Spring Onion White Rice</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Teriyaki Rice</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Mashed Potatoes</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <div class="mains-item">
+                  <div class="item-info">
+                    <h5>Cheeto Wings</h5>
+                    <p class="price">£6.00</p>
+                  </div>
+                  <p class="mains-description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vel, modi.
+                  </p>
+                </div>
+                <p class="sides-info">(Served on their own)</p>
+                <div class="pageTop" id="sides-top">
+                  <a href="#menuContainer" class="fine-print">
+                    <div class="arrow-container">
+                      <svg
+                        class="arrow"
+                        width="20"
+                        height="20"
+                        viewBox="-20 -10 50 50"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                      >
+                        <path
+                          id="arrow"
+                          d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"
+                        />
+                      </svg>
+                    </div>
+                    <p>Back to top</p></a
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
+          <!-- drinks -->
+          <div class="drinks-container">
+            <div
+              class="drinks-items-container"
+              id="drinks-items-container"
+              style="display: none"
+              ;
+            >
+              <div class="drinks-container2" id="drinks-container">
+                <div class="item-info drinks-info">
+                  <p>Water</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Trap Medicine</p>
+
+                  <p class="price">£3.50</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Lilt</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>7UP</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Rio</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Fanta Orange</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Fanta Fruit Twist</p>
+                  <p class="price">£1.00</p>
+                </div>
+
+                <div class="item-info drinks-info">
+                  <p>Coca-Cola</p>
+                  <p class="price">£1.00</p>
+                </div>
+
+                <div class="item-info drinks-info">
+                  <p>Rubicon Mango</p>
+                  <p class="price">£1.00</p>
+                </div>
+                <div class="item-info drinks-info">
+                  <p>Rubicon Guava</p>
+                  <p class="price">£1.00</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- contact -->
 
       <section class="contact-container" id="contact-container">
+        <div class="svg-scroll-line2">
+          <svg
+            class="scroll-line1"
+            width="2"
+            height="218"
+            viewBox="0 0 2 218"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="scroll-line3"
+              class="scroll-line1"
+              d="M1 0V218"
+              stroke="black"
+            />
+          </svg>
+        </div>
+
+        <div class="svg-scroll-line">
+          <svg
+            class="scroll-line2"
+            width="2"
+            height="218"
+            viewBox="0 0 2 218"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="scroll-line3"
+              class="scroll-line2"
+              d="M1 0V218"
+              stroke="black"
+            />
+          </svg>
+        </div>
         <div class="contact-heading">
+          <div class="contact-main-heading fade-up contact-fadeUp">
+            <h2>Contact Us</h2>
+            <!-- <div class="star-container">
 
-     
-
-          <div class="contact-main-heading">
-          <h2>Contact Us</h2>
-          <div class="star-container">
-
-            <svg width="50" height="50" viewBox="0 0 294 280" fill="none" xpreserveAspectRatio="xMidYMax meet" id="line-scroll"">
+            <svg  width="50" height="50" viewBox="0 0 294 280" fill="none" xpreserveAspectRatio="xMidYMax meet" id="line-scroll"">
               <path id="star-path" class="star-path" d="M146.938 4.85412L162.855 53.842L180.199 107.22L180.536 108.257H181.626H289.26L202.182 171.523L201.3 172.163L201.637 173.2L234.898 275.566L147.82 212.3L146.938 211.66L146.057 212.3L58.9786 275.566L92.2394 173.2L92.5762 172.163L91.6945 171.523L4.61652 108.257H112.251H113.341L113.677 107.22L146.938 4.85412Z" stroke="black" stroke-width="10"/>
-            </svg>
+            </svg> -->
+            <!-- </div> -->
           </div>
         </div>
+        <div class="map-container fade-left">
+          <iframe
+            class="maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.197353724355!2d-2.2108047841563994!3d53.48280348000777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb13e876a2e33%3A0x4b12378ea829547b!2sTrap%20Kitchen%20MCR!5e0!3m2!1sen!2suk!4v1654522086109!5m2!1sen!2suk"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="map-container fade-up">
 
-          <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.197353724355!2d-2.2108047841563994!3d53.48280348000777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb13e876a2e33%3A0x4b12378ea829547b!2sTrap%20Kitchen%20MCR!5e0!3m2!1sen!2suk!4v1654522086109!5m2!1sen!2suk" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        
-
-        
-        
-
-        <div class="openHours-container fade-up">
-          
-          
-
+        <div class="openHours-container fade-left">
           <div class="contact-clock">
             <svg
               class="clocky"
@@ -450,78 +609,79 @@
               fill-rule="evenodd"
               clip-rule="evenodd"
             >
-              <path class="clock2" stroke-width="2"
+              <path
+                class="clock2"
+                stroke-width="2"
                 d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm0 11h6v1h-7v-9h1v8z "
               />
             </svg>
-             <h3>Business Hours</h3>
-
+            <h3>Business Hours</h3>
           </div>
-          <div class="business-hours ">
-
-            
+          <div class="business-hours">
             <p>
-              <span style="font-size: 2rem;">Mon:</span> 15:00 - 22:00
+              <span style="font-size: 2rem">Mon:</span> 15:00 - 22:00
               <br />
-              <span style="font-size: 2rem;">Tue: Closed</span>
+              <span style="font-size: 2rem">Tue: Closed</span>
               <br />
-              <span style="font-size: 2rem;">Wed - Sat:</span> 15:00 - 22:00
+              <span style="font-size: 2rem">Wed - Sat:</span> 15:00 - 22:00
               <br />
-              <span style="font-size: 2rem;">Sun:</span> 15:00 - 21:00
-            
+              <span style="font-size: 2rem">Sun:</span> 15:00 - 21:00
             </p>
           </div>
+        </div>
+        <div class="address-container1 fade-left">
+          <div class="address-heading">
+            <svg
+              class="pin1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-4.198 0-8 3.403-8 7.602 0 6.243 6.377 6.903 8 16.398 1.623-9.495 8-10.155 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.342-3 3-3 3 1.343 3 3-1.343 3-3 3z"
+              />
+            </svg>
+            <h3>Find us Here!</h3>
           </div>
-          <div class="address-container1 fade-up">
-            <div class="address-heading">
 
+          <div class="address-and-link">
+            <a
+              href="https://www.google.com/maps/dir//Trap+Kitchen+Mcr/@53.482783,-2.2786556,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487bb13e876a2e33:0x4b12378ea829547b!2m2!1d-2.2086161!2d53.4828035"
+              target="_blank"
+              ><p>Click for Directions</p>
+
+              <p>
+                6-8 Hillkirk Street <br />
+                Beswick<br />
+                M11 3EZ <br />
+                UK
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="contact fade-left">
+          <div class="number">
+            <div class="contact-heading1">
               <svg
-               class="pin1"
-               xmlns="http://www.w3.org/2000/svg"
-               width="24"
-               height="24"
-               viewBox="0 0 24 24"
-             >
-               <path 
-                 d="M12 0c-4.198 0-8 3.403-8 7.602 0 6.243 6.377 6.903 8 16.398 1.623-9.495 8-10.155 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.342-3 3-3 3 1.343 3 3-1.343 3-3 3z"
-               />
-             </svg>
-             <h3>Find us Here!</h3>
+                class="phone-svg"
+                height="30"
+                viewBox="0 0 48 48"
+                width="30"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 0h48v48h-48z" fill="none" />
+                <path
+                  d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49 2.24.74 4.65 1.14 7.14 1.14 1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2-18.78 0-34-15.22-34-34 0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"
+                />
+              </svg>
+              <h3>Call Us Now</h3>
             </div>
-            
-            <div class="address-and-link">
-
-              <a href="https://www.google.com/maps/dir//Trap+Kitchen+Mcr/@53.482783,-2.2786556,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x487bb13e876a2e33:0x4b12378ea829547b!2m2!1d-2.2086161!2d53.4828035" target="_blank"><p>Click for Directions</p>
-
-
-
-
-             
-
-
-               <p>6-8 Hillkirk Street <br>
-                   Beswick<br>
-                   M11 3EZ <br>
-                   UK
-               </p>
-               </a>
-             
-            </div>
+            <a href="tel:+447399 180779"><p>07399 180779</p></a>
           </div>
-          <div class="contact fade-up">
-            <div class="number">
-
-              <div class="contact-heading">
-                <h3>Call Us Now </h3>
-                
-              </div>
-              <a href="tel:+447399 180779"><p>07399 180779</p></a>
-            </div>
-            
-          </div>
-        
+        </div>
       </section>
-    <!-- footer -->
+      <!-- footer -->
       <footer class="footer">i am footerrrr &copy;</footer>
     </div>
     <script src="app.js"></script>
@@ -533,7 +693,5 @@
     <script>
       AOS.init();
     </script>
-    
-  
   </body>
 </html>
