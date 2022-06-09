@@ -9,25 +9,35 @@
     align-items: center;
     color: rgb(225, 225, 225);
   }
+  .contact-heading {
+    width: 100%;
+
+    width: 90%;
+  }
+
+  .contact-main-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2%;
+  }
   .contact-container a {
     text-decoration: underline;
     color: white;
 
     cursor: pointer;
   }
-  .contact-heading {
-    width: 100%;
-    border-bottom: white solid 2px;
-    width: 90%;
-  }
   .contact-container h2 {
-    color: white;
+    color: rgb(242, 73, 73);
     font-size: 3.4rem;
 
     letter-spacing: 3px;
     position: relative;
     left: 0;
     margin: 5% 0;
+  }
+  .star-container {
+    margin-left: auto;
   }
   .map-container {
     border-bottom: white solid 2px;
@@ -50,7 +60,7 @@
     flex-direction: column;
     border-bottom: solid rgb(255, 255, 255) 2px;
 
-    height: 40%;
+    height: 40vh;
     width: 90%;
   }
   .business-hours {
@@ -59,25 +69,26 @@
     justify-content: center;
     align-items: center;
   }
+  .contact-clock {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 
   .contact-container h3 {
     margin-bottom: 2%;
     font-size: 3rem;
-    color: white;
+    color: rgb(242, 73, 73);
   }
   .contact-container p {
-    font-size: 2.7rem;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
   }
 
   .times-and-clock {
     display: flex;
   }
 
-  .contact-clock {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .clocky {
     color: rgb(255, 255, 255);
     margin-right: 10px;
@@ -87,7 +98,7 @@
     stroke-dasharray: 176.51873779296875;
     stroke-dashoffset: 176.51873779296875;
     animation: clockAni1 2s ease-in forwards 1.8s;
-    stroke: rgb(255, 255, 255);
+    stroke: rgb(242, 73, 73);
   }
 
   @keyframes clockAni1 {
@@ -106,7 +117,7 @@
     align-items: flex-start;
     border-bottom: solid rgb(255, 255, 255) 2px;
     /* border: yellow solid 2px; */
-    height: 30%;
+    height: 40vh;
     width: 90%;
     flex-direction: column;
   }
@@ -122,16 +133,28 @@
     align-items: center;
     flex-direction: column;
   }
+  .address-heading {
+    display: flex;
+    align-items: center;
+  }
   .contact {
     z-index: 2;
     font-family: "Kanit", sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     border-bottom: solid rgb(255, 255, 255) 2px;
-    height: 30%;
+    height: 40vh;
     width: 90%;
+  }
+  .number {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .fade-up {
     opacity: 0;
@@ -161,14 +184,14 @@
     z-index: 100;
   }
   .star-path {
-    stroke: red;
+    stroke: rgb(242, 73, 73);
   }
 
   .star-line {
     stroke-dasharray: 1087.241455078125;
     stroke-dashoffset: 1087.241455078125;
     animation: clockAni1 1s ease-in forwards 1.8s;
-    stroke: red;
+    stroke: rgb(242, 73, 73);
   }
 
   @keyframes clockAni1 {
@@ -178,5 +201,9 @@
     from {
       stroke-dashoffset: 1087.241455078125;
     }
+  }
+
+  .pin1 {
+    fill: rgb(242, 73, 73);
   }
 }
