@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     color: rgb(225, 225, 225);
+    position: relative;
   }
   .contact-heading {
     width: 100%;
@@ -17,9 +18,10 @@
 
   .contact-main-heading {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 2%;
+    height: 10vh;
   }
   .contact-container a {
     text-decoration: underline;
@@ -46,6 +48,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 101;
+    margin-top: 30%;
   }
   .maps {
     border-radius: 2%;
@@ -148,6 +152,10 @@
     height: 40vh;
     width: 90%;
   }
+  .contact-heading1 {
+    display: flex;
+    width: 100%;
+  }
   .number {
     height: 100%;
     width: 100%;
@@ -156,13 +164,13 @@
     justify-content: center;
     align-items: center;
   }
-  .fade-up {
+  .fade-left {
     opacity: 0;
     transform: translateX(-30%);
     transition: opacity 150ms ease-in, transform 400ms ease-in;
   }
 
-  .fade-up.appear {
+  .fade-left.appear {
     opacity: 1;
     transform: translateX(0);
   }
@@ -205,5 +213,88 @@
 
   .pin1 {
     fill: rgb(242, 73, 73);
+  }
+  .phone-svg {
+    fill: rgb(242, 73, 73);
+  }
+
+  .svg-scroll-line {
+    z-index: 100;
+    position: absolute;
+    top: 0vh;
+  }
+  .svg-scroll-line2 {
+    z-index: 100;
+    position: absolute;
+    top: 20vh;
+  }
+  .scroll-line1 {
+    stroke: red;
+    height: 20vh;
+    width: 100%;
+    stroke-width: 5;
+  }
+  .scroll-line2 {
+    height: 15vh;
+    width: 100%;
+    stroke-width: 5;
+  }
+
+  .scroll-line1-opacity {
+    opacity: 0;
+    transition: opacity ease-in 1s;
+  }
+
+  .scroll-line1-ani {
+    stroke: rgb(242, 73, 73);
+
+    stroke-dasharray: 218;
+    stroke-dashoffset: 218;
+    animation: lineAnimation1 1s ease-in forwards 1.8s;
+  }
+  .scroll-line2-opacity {
+    opacity: 0;
+    transition: opacity ease-in 1s;
+  }
+
+  .scroll-line2-ani {
+    stroke: rgb(242, 73, 73);
+
+    stroke-dasharray: 218;
+    stroke-dashoffset: 218;
+    animation: lineAnimation1 1s ease-in forwards 1.8s;
+  }
+  .scroll-line1-opacity.scroll-line1-ani {
+    opacity: 1;
+  }
+  .scroll-line2-opacity.scroll-line2-ani {
+    opacity: 1;
+  }
+
+  @keyframes lineAnimation1 {
+    to {
+      stroke-dashoffset: 0;
+    }
+    from {
+      stroke-dashoffset: 218;
+    }
+  }
+  .contact-fadeUp {
+    opacity: 0;
+    transition: opacity 3s ease-in forwards;
+  }
+
+  /* .contact-fadeUp.appear1 {
+    opacity: 1;
+  } */
+
+  .fade-up {
+    transform: translateY(50%);
+    transition: transform 400ms ease-in;
+  }
+  .fade-up.appear1,
+  .contact-fadeUp.appear1 {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
