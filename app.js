@@ -88,6 +88,7 @@ menuSection.forEach((item) => {
 // ! sides onClick
 sidesTitle.addEventListener("click", function (e) {
   mainsTitle.classList.remove("mains-active");
+  sidesTitle.classList.remove("mains-active");
 
   let sideHeading = document.querySelectorAll("#side-container h5");
   let eachSide = document.querySelectorAll("#side-container p");
