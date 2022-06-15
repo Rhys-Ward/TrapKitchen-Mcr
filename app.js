@@ -241,10 +241,6 @@ window.onscroll = () => {
 clock = document.getElementById("clock");
 console.log(clock.getTotalLength(), "i am clock");
 
-//!Contact
-line = document.querySelector("#scroll-line3");
-console.log(line.getTotalLength(), "I am line");
-
 //! Scroll animation javascript
 const faders = document.querySelectorAll(".fade-left");
 const contactFaders = document.querySelector(".fade-up");
@@ -263,7 +259,7 @@ const appearOnScroll1 = new IntersectionObserver(function (
     } else {
       entry.target.classList.add("appear");
       contactFaders.classList.add("appear1");
-      line.classList.add("scroll-line2-ani");
+
       // appearOnScroll.unobserve(entry.target);
     }
   });
