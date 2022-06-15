@@ -50,6 +50,11 @@ window.onload = function () {
     "Open- 15:00 - 22:00",
   ];
   document.getElementById("day").innerHTML = days[day];
+  invisibleWrapper = document.getElementById("invisible");
+  invisibleWrapper.forEach((item) => {
+    item.classList.add("invisible");
+    console.log(item);
+  });
 
   // mainsTitle.classList.add("mains-active");
 };
@@ -99,7 +104,9 @@ sidesTitle.addEventListener("click", function (e) {
   sideHeading.forEach((item, index) => {
     {
       if (item.style.animation) {
-        item.style.animation = "";
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
       } else {
         item.style.animation = `fadeUp 500ms ease-in forwards ${
           index / 25 + 0.2
@@ -111,7 +118,9 @@ sidesTitle.addEventListener("click", function (e) {
   eachSide.forEach((item, index) => {
     {
       if (item.style.animation) {
-        item.style.animation = "";
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
       } else {
         item.style.animation = `fadeUp 500ms ease-in forwards ${
           index / 25 + 0.3
@@ -130,7 +139,9 @@ drinks.addEventListener("click", function (e) {
   eachDrink.forEach((item, index) => {
     {
       if (item.style.animation) {
-        item.style.animation = "";
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
       } else {
         item.style.animation = `fadeUp 500ms ease-in forwards ${
           index / 25 + 0.2
@@ -145,7 +156,9 @@ mainsTitle.addEventListener("click", function (e) {
   mainHeading.forEach((item, index) => {
     {
       if (item.style.animation) {
-        item.style.animation = "";
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
       } else {
         item.style.animation = `fadeUp 500ms ease-in forwards ${
           index / 25 + 0.2
@@ -157,7 +170,9 @@ mainsTitle.addEventListener("click", function (e) {
   eachMain.forEach((item, index) => {
     {
       if (item.style.animation) {
-        item.style.animation = "";
+        item.style.animation = `fadeUp 500ms ease-in forwards ${
+          index / 25 + 0.3
+        }s`;
       } else {
         item.style.animation = `fadeUp 500ms ease-in forwards ${
           index / 25 + 0.3

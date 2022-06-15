@@ -6,7 +6,20 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,400;1,800&display=swap");
 /*font-family: 'Kanit', sans-serif;*/
-
+.invisible {
+  background: yellow;
+}
+/* .invisible.visible {
+  animation: appear 6s ease forwards;
+}
+@keyframes appear {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+} */
 body {
   background-color: black;
   overflow-x: hidden;

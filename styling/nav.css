@@ -4,7 +4,7 @@
   width: 100%;
   animation: slide 5s ease forwards;
   position: absolute;
-  z-index: 4;
+  z-index: 1010;
 }
 
 .overlay1 {
@@ -13,7 +13,7 @@
   width: 100%;
   position: absolute;
   animation: slide 4s ease-in-out forwards;
-  z-index: 5;
+  z-index: 1010;
 }
 
 @keyframes slide {
@@ -33,7 +33,7 @@
   align-items: center;
   min-height: 8vh;
   position: fixed;
-  z-index: 100;
+  z-index: 99;
   top: 0px;
   right: 0px;
   width: 100%;
