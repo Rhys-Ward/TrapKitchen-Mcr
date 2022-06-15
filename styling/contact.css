@@ -1,5 +1,7 @@
 @media screen and (max-width: 576px) {
   /* !open hours */
+
+  /* !Main Containers and styles */
   .contact-container {
     height: auto;
     width: 100%;
@@ -11,8 +13,6 @@
     position: relative;
   }
   .contact-heading {
-    width: 100%;
-
     width: 90%;
   }
 
@@ -24,25 +24,33 @@
     height: 10vh;
   }
   .contact-container a {
-    text-decoration: underline;
-    color: white;
-
+    color: rgb(224, 224, 224);
+    text-decoration: none;
     cursor: pointer;
   }
   .contact-container h2 {
     color: rgb(242, 73, 73);
     font-size: 3.4rem;
-
-    letter-spacing: 3px;
+    /* letter-spacing: 1px; */
     position: relative;
     left: 0;
     margin: 5% 0;
+    font-family: Sora;
   }
-  .star-container {
-    margin-left: auto;
+  .contact-container h3 {
+    margin-bottom: 2%;
+
+    font-size: 3rem;
+    color: rgb(242, 73, 73);
   }
+  .contact-container p {
+    font-size: 2rem;
+    color: rgb(227, 227, 227);
+    letter-spacing: 1px;
+  }
+
+  /* !Map Styling */
   .map-container {
-    border-bottom: white solid 2px;
     width: 90%;
     height: 30%;
     display: flex;
@@ -54,6 +62,14 @@
     border-radius: 2%;
     margin: 5% 0;
   }
+
+  /* !Container for business hours, 
+  ! find us, and call us sections */
+  .contact-information-container {
+    width: 70%;
+  }
+
+  /* !Business Hours Styling */
   .openHours-container {
     position: relative;
     z-index: 2;
@@ -62,102 +78,75 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border-bottom: solid rgb(255, 255, 255) 2px;
-
-    height: 40vh;
-    width: 90%;
-  }
-  .business-hours {
+    /* border-bottom: solid rgb(255, 255, 255) 2px; */
+    height: 25vh;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* border: solid white 2px; */
+    margin: 5% 0%;
   }
-  .contact-clock {
+  .contact-heading-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
   }
-
-  .contact-container h3 {
-    margin-bottom: 2%;
-    margin-left: 2%;
-    font-size: 3rem;
-    color: rgb(242, 73, 73);
-  }
-  .contact-container p {
-    font-size: 2rem;
-    color: rgb(255, 255, 255);
-  }
-
-  .times-and-clock {
+  .business-hours {
+    width: 100%;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 
-  .clocky {
-    color: rgb(255, 255, 255);
-  }
-
-  .clock2 {
-    stroke-dasharray: 176.51873779296875;
-    stroke-dashoffset: 176.51873779296875;
-    animation: clockAni1 2s ease-in forwards 1.8s;
-    stroke: rgb(242, 73, 73);
-  }
-
-  @keyframes clockAni1 {
-    to {
-      stroke-dashoffset: 0;
-    }
-    from {
-      stroke-dashoffset: 176.51873779296875;
-    }
-  }
+  /* !Address Stylings */
   .address-container1 {
     z-index: 2;
     font-family: "Kanit", sans-serif;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border-bottom: solid rgb(255, 255, 255) 2px;
-    /* border: yellow solid 2px; */
-    height: 40vh;
-    width: 90%;
+    height: 30vh;
+    width: 100%;
     flex-direction: column;
+
+    margin: 5% 0%;
   }
 
   .address-container1 a {
     text-decoration: none;
     margin: 0;
   }
-  .address-and-link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
   .address-heading {
     display: flex;
     align-items: center;
     width: 100%;
   }
+  .address-and-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  /* !Styling for Call us now */
   .contact {
     z-index: 2;
     font-family: "Kanit", sans-serif;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-    border-bottom: solid rgb(255, 255, 255) 2px;
-    height: 40vh;
-    width: 90%;
+    height: 15vh;
+    width: 100%;
+    margin: 15% 0%;
   }
   .contact-heading1 {
     display: flex;
     width: 100%;
     align-items: center;
+  }
+  .number-atag {
+    margin-left: 3%;
   }
   .number {
     height: 100%;
@@ -165,14 +154,53 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
-  .phone-number {
-    width: 50%;
+
+  /* !Number Container for animation*/
+  .mobileNumBox1 {
+    position: relative;
+    border: 2px solid rgba(252, 252, 252, 0.836);
+    border-radius: 3%;
+    margin-bottom: 15%;
+    padding: 2px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    transition: transform 0.5s ease-in;
+    width: 65%;
   }
+
+  .mobileNum1::after {
+    background-color: red;
+
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 400ms ease-in-out;
+  }
+
+  .mobileNum1:hover::after,
+  .mobileNum1:focus::after {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  .mobileNum1 {
+    z-index: 1;
+    padding: 2px;
+    font-size: 0.8rem;
+    justify-content: center;
+    display: flex;
+
+    width: 100%;
+  }
+
+  /* !Stylings for animations */
   .fade-left {
     opacity: 0;
     transform: translateX(-30%);
@@ -183,50 +211,6 @@
     opacity: 1;
     transform: translateX(0);
   }
-
-  .line-container {
-    position: sticky;
-    top: 0%;
-    left: 0%;
-    width: 100vw;
-    height: 100%;
-    text-align: center;
-    overflow: hidden;
-    z-index: 100;
-  }
-
-  #line-scroll {
-    display: inline-block;
-    height: 100%;
-    z-index: 100;
-  }
-  .star-path {
-    stroke: rgb(242, 73, 73);
-  }
-
-  .star-line {
-    stroke-dasharray: 1087.241455078125;
-    stroke-dashoffset: 1087.241455078125;
-    animation: clockAni1 1s ease-in forwards 1.8s;
-    stroke: rgb(242, 73, 73);
-  }
-
-  @keyframes clockAni1 {
-    to {
-      stroke-dashoffset: 0;
-    }
-    from {
-      stroke-dashoffset: 1087.241455078125;
-    }
-  }
-
-  .pin1 {
-    fill: rgb(242, 73, 73);
-  }
-  .phone-svg {
-    fill: rgb(242, 73, 73);
-  }
-
   .contact-fadeUp {
     opacity: 0;
     transition: opacity 3s ease-in forwards;
