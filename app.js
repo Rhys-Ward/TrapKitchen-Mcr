@@ -50,6 +50,11 @@ window.onload = function () {
     "Open- 15:00 - 22:00",
   ];
   document.getElementById("day").innerHTML = days[day];
+  invisibleWrapper = document.getElementById("invisible");
+  invisibleWrapper.forEach((item) => {
+    item.classList.add("invisible");
+    console.log(item);
+  });
 
   // mainsTitle.classList.add("mains-active");
 };
