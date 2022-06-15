@@ -285,25 +285,6 @@ faders.forEach((fader) => {
   appearOnScroll1.observe(fader);
 });
 
-let star1 = document.querySelector(".star-container");
-let star2 = document.querySelector("#star-path");
-const starOptions = {
-  threshold: 0.25,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const starOnScroll = new IntersectionObserver(function (entries, starOnScroll) {
-  entries.forEach((entry) => {
-    if (!entry.isIntersecting) {
-      entry.target.classList.remove("star-line");
-    } else {
-      entry.target.classList.add("star-line");
-      console.log(entry);
-    }
-  });
-});
-starOnScroll.observe(star1);
-
 // !all functions called within app
 const app = () => {
   navSlide();
