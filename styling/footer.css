@@ -1,0 +1,39 @@
+/* !Main Footer Stylings */
+footer {
+  font-size: 2.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer {
+  height: auto;
+  width: 100%;
+}
+.footer-container {
+  width: 80%;
+  border: solid 2px red;
+}
+
+.footer h3 {
+  font-size: 2rem;
+  margin-top: 2vh;
+}
+
+.footer p {
+}
+
+.footer li {
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* !Icons in Footer Styles */
+.footer-icon-container {
+  display: flex;
+}
+.footer-icon-container i {
+  font-size: 2rem;
+  margin: 5px 10px;
+}
