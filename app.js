@@ -282,6 +282,28 @@ faders.forEach((fader) => {
   appearOnScroll1.observe(fader);
 });
 
+//! Disable Scroll Function
+
+const scrollCancel = () => {
+  const functionDisable = () => {
+    topScroll = window.pageYOffset || document.documentElement.scrollTop;
+    leftScroll = window.pageXOffset || document.documentElement.scrollLeft;
+
+    window.onscroll = function () {
+      window.scrollTo(leftScroll, topScroll);
+    };
+  };
+  functionDisable();
+
+  const functionEnable = () => {
+    windown.onscroll = function () {};
+  };
+  setTimeout(function enableFunction() {
+    window.onscroll = function () {};
+  }, 4000);
+};
+scrollCancel();
+
 // !all functions called within app
 const app = () => {
   navSlide();
