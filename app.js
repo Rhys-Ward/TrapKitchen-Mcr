@@ -50,11 +50,6 @@ window.onload = function () {
     "Open- 15:00 - 22:00",
   ];
   document.getElementById("day").innerHTML = days[day];
-  invisibleWrapper = document.getElementById("invisible");
-  invisibleWrapper.forEach((item) => {
-    item.classList.add("invisible");
-    console.log(item);
-  });
 
   // mainsTitle.classList.add("mains-active");
 };
@@ -259,6 +254,7 @@ console.log(clock.getTotalLength(), "i am clock");
 //! Scroll animation javascript
 const faders = document.querySelectorAll(".fade-left");
 const contactFaders = document.querySelector(".fade-up");
+const mapFader = document.querySelector(".map-container");
 const appearOptions = {
   threshold: 0.25,
   rootMargin: "0px 0px -50px 0px",
@@ -274,6 +270,7 @@ const appearOnScroll1 = new IntersectionObserver(function (
     } else {
       entry.target.classList.add("appear");
       contactFaders.classList.add("appear1");
+      mapFader.classList.add("appear1");
 
       // appearOnScroll.unobserve(entry.target);
     }

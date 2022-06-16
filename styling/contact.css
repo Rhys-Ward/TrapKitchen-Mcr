@@ -11,6 +11,7 @@
     align-items: center;
     color: rgb(225, 225, 225);
     position: relative;
+    padding-top: 10vh;
   }
   .contact-heading {
     width: 90%;
@@ -56,7 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 101;
+    z-index: 105;
   }
   .maps {
     border-radius: 2%;
@@ -205,6 +206,7 @@
     opacity: 0;
     transform: translateX(-30%);
     transition: opacity 150ms ease-in, transform 400ms ease-in;
+    transition-delay: 0.5s;
   }
 
   .fade-left.appear {
