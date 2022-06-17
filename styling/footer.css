@@ -4,6 +4,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5vh;
 }
 .footer {
   height: auto;
@@ -11,22 +12,25 @@ footer {
 }
 .footer-container {
   width: 80%;
-  border: solid 2px red;
+
+  /* border: solid 2px red; */
 }
 
 .footer h3 {
-  font-size: 2rem;
-  margin-top: 2vh;
-}
-
-.footer p {
+  font-size: 2.4rem;
+  margin-top: 5vh;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .footer li {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   text-decoration: none;
   list-style: none;
   cursor: pointer;
+  color: rgb(126, 126, 126);
+  margin: 2% 0%;
+  letter-spacing: 1px;
 }
 
 /* !Icons in Footer Styles */
@@ -34,6 +38,7 @@ footer {
   display: flex;
 }
 .footer-icon-container i {
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 5px 10px;
+  color: rgb(126, 126, 126);
 }
