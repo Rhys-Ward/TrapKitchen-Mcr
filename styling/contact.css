@@ -1,4 +1,7 @@
 @media screen and (max-width: 576px) {
+  /* ! wrapper for whole section */
+  .main-contact-container {
+  }
   /* !open hours */
 
   /* !Main Containers and styles */
