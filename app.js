@@ -252,12 +252,13 @@ clock = document.getElementById("clock");
 console.log(clock.getTotalLength(), "i am clock");
 
 //! Scroll animation javascript
+const contactWrapper = document.getElementById("contact-container");
 const faders = document.querySelectorAll(".fade-left");
 const contactFaders = document.querySelector(".fade-up");
 const mapFader = document.querySelector(".map-container");
 const appearOptions = {
-  threshold: 0.25,
-  rootMargin: "0px 0px -50px 0px",
+  threshold: 0.2,
+  rootMargin: "0px 0px -30px 0px",
 };
 const appearOnScroll1 = new IntersectionObserver(function (
   entries,
@@ -271,6 +272,7 @@ const appearOnScroll1 = new IntersectionObserver(function (
       entry.target.classList.add("appear");
       contactFaders.classList.add("appear1");
       mapFader.classList.add("appear1");
+      console.log("hit");
 
       // appearOnScroll.unobserve(entry.target);
     }
@@ -278,6 +280,7 @@ const appearOnScroll1 = new IntersectionObserver(function (
 },
 appearOptions);
 
+appearOnScroll1.observe(contactFaders);
 faders.forEach((fader) => {
   appearOnScroll1.observe(fader);
 });
@@ -296,16 +299,15 @@ const scrollCancel = () => {
   functionDisable();
 
   const functionEnable = () => {
-    windown.onscroll = function () {};
+    window.onscroll = function () {};
   };
   setTimeout(function enableFunction() {
     window.onscroll = function () {};
   }, 4000);
 };
-scrollCancel();
-
 // !all functions called within app
 const app = () => {
   navSlide();
+  // scrollCancel();
 };
 app();
