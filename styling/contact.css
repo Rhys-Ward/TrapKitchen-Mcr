@@ -209,7 +209,7 @@
     opacity: 0;
     transform: translateX(-30%);
     transition: opacity 150ms ease-in, transform 400ms ease-in;
-    transition-delay: 0.5s;
+    /* transition-delay: 0.5s; */
   }
 
   .fade-left.appear {

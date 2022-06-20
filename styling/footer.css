@@ -1,6 +1,10 @@
+/* !Imports */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+/* font-family: 'Kanit', sans-serif;  */
+
 /* !Main Footer Stylings */
 footer {
-  font-size: 2.7rem;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,16 +13,16 @@ footer {
 .footer {
   height: auto;
   width: 100%;
+  border-top: white 2px solid;
+  font-family: "Kanit", sans-serif;
 }
 .footer-container {
-  width: 80%;
-
+  width: 110%;
   /* border: solid 2px red; */
 }
 
 .footer h3 {
   font-size: 2.4rem;
-  margin-top: 5vh;
   color: white;
   letter-spacing: 2px;
 }
@@ -32,13 +36,16 @@ footer {
   margin: 2% 0%;
   letter-spacing: 1px;
 }
+.footer-item {
+  margin-bottom: 3vh;
+}
 
 /* !Icons in Footer Styles */
 .footer-icon-container {
   display: flex;
 }
 .footer-icon-container i {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 5px 10px;
   color: rgb(126, 126, 126);
 }
