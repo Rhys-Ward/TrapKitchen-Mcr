@@ -1,50 +1,48 @@
 @media screen and (max-width: 576px) {
   .about-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* !! about = concept wrapper */
+  .concept-wrapper {
+    height: 300vh;
+    width: 100%;
+    display: flex;
+  }
+  .concept-wrapper img {
+    height: 200px;
+    width: 200px;
+  }
+  /* !! title = concept-logo-container */
+  .concept-logo-container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+  /* !! about-pages = img container  */
+  .about-pages {
+    width: 50%;
+  }
+  .about-pages div {
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    padding: 2%;
-    height: auto;
-  }
-
-  .concept-logo-container {
-    margin-top: 10vh;
-    margin-left: 15%;
-    display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
-    height: 10vh;
-    width: 70%;
-    /* position: absolute; */
-    /* border: 3px yellow solid; */
   }
-  .concept-logo {
-    width: 100%;
+  .about-pages div:nth-child(odd) {
+    background-color: burlywood;
   }
-
-  .concept-wrapper {
-    position: relative;
-    border: 2px solid yellow;
-    height: 50vh;
-    width: 100%;
-    object-fit: cover;
-    /* Doesnt matter which value perspective is. Its about how relative the others are to this value */
-  }
-
-  .trap-building {
-    position: absolute;
-    height: 30%;
-    /* z-index: 20; */
-  }
-  .trap-phone {
-    position: absolute;
-
-    height: 20%;
-    /* z-index: 3; */
-  }
-  .million-pound-menu-show {
-    position: absolute;
-    bottom: 0;
-    height: 50%;
+  .about-pages div > p {
+    color: red;
+    width: 80%;
+    font-size: 2.7rem;
   }
 }
