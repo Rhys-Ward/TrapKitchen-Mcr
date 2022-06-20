@@ -11,10 +11,11 @@ footer {
   padding: 5vh;
 }
 .footer {
-  height: auto;
+  height: 100vh;
   width: 100%;
   border-top: white 2px solid;
   font-family: "Kanit", sans-serif;
+  padding-top: 10vh;
 }
 .footer-container {
   width: 110%;
@@ -24,7 +25,7 @@ footer {
 .footer h3 {
   font-size: 2.4rem;
   color: white;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .footer li {
@@ -36,8 +37,17 @@ footer {
   margin: 2% 0%;
   letter-spacing: 1px;
 }
+
+.footer p,
+a {
+  font-size: 1.5rem;
+}
+.footer span a {
+  text-decoration: underline;
+}
+
 .footer-item {
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
 }
 
 /* !Icons in Footer Styles */
