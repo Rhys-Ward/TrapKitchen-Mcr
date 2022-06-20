@@ -63,8 +63,8 @@ window.onload = function () {
 // ! menu observer
 const options = {
   root: null, // itis the view port
-  threshold: 0.6, // between 0-1, 0 being once it hits the page, and 1 being when all the page is in the viewport
-  rootMargin: "-0px 0px -100px 0px", // set in px or % only
+  threshold: 0.2, // between 0-1, 0 being once it hits the page, and 1 being when all the page is in the viewport
+  rootMargin: "-0px 0px -30px 0px", // set in px or % only
 };
 
 const appearOnScroll = new IntersectionObserver(function (
