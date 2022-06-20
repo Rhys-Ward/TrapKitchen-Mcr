@@ -305,9 +305,24 @@ const scrollCancel = () => {
     window.onscroll = function () {};
   }, 4000);
 };
+
+// ! CONCEPT PAGE
+function splitScroll() {
+  const controller = new ScrollMagic.Controller();
+
+  new ScrollMagic.Scene({
+    duration: "200%",
+    triggerElement: ".concept-logo-container",
+    triggerHook: 0,
+  })
+    .setPin(".concept-logo-container")
+    .addIndicators()
+    .addTo(controller);
+}
 // !all functions called within app
 const app = () => {
   navSlide();
   // scrollCancel();
+  splitScroll();
 };
 app();
