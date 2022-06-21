@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap");
 /*font-family: 'Noto Serif', serif;*/
+@font-face {
+  font-family: brushstrike;
+  src: url(fonts/Brushstrike\ trial.ttf);
+}
 
 @media screen and (max-width: 576px) {
   .menu-container {
@@ -17,12 +21,13 @@
     justify-content: center;
     font-size: 3.5rem;
     margin-bottom: 10%;
+    font-family: brushstrike;
   }
   .menu-headings {
     display: flex;
     align-items: center;
     /* border: yellow solid 2px; */
-    padding: 6% 0%;
+    padding: 6% 3%;
     width: 100%;
     overflow-x: scroll;
     scroll-behavior: auto;
@@ -42,11 +47,17 @@
     /* border: yellow solid 2px; */
     font-size: 2.7rem;
     cursor: pointer;
+    font-family: brushstrike;
   }
   /* java */
   .mains-active {
     color: #a10101;
     border-bottom: 0.4rem solid #a10101;
+  }
+
+  .mains-title {
+    font-family: brushstrike;
+    color: red;
   }
 
   /* //////// */

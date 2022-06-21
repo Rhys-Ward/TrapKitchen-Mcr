@@ -1,3 +1,8 @@
+@font-face {
+  font-family: brushstrike;
+  src: url(fonts/Brushstrike\ trial.ttf);
+}
+
 @media screen and (max-width: 576px) {
   /* ! wrapper for whole section */
   .main-contact-container {
@@ -34,18 +39,20 @@
   }
   .contact-container h2 {
     color: rgb(242, 73, 73);
-    font-size: 3.4rem;
-    /* letter-spacing: 1px; */
+    font-size: 4rem;
     position: relative;
     left: 0;
     margin: 5% 0;
     font-family: Sora;
+    font-family: brushstrike;
+    letter-spacing: 1px;
   }
   .contact-container h3 {
     margin-bottom: 2%;
-
-    font-size: 3rem;
+    font-family: brushstrike;
+    font-size: 3.5rem;
     color: rgb(242, 73, 73);
+    letter-spacing: 1px;
   }
   .contact-container p {
     font-size: 2rem;
