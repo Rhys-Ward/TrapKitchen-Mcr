@@ -16,6 +16,7 @@ footer {
   border-top: white 2px solid;
   font-family: "Kanit", sans-serif;
   padding-top: 10vh;
+  padding-bottom: 3vh;
 }
 .footer-container {
   width: 110%;
@@ -41,6 +42,8 @@ footer {
 .footer p,
 a {
   font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
 }
 .footer span a {
   text-decoration: underline;
