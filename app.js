@@ -311,11 +311,12 @@ function splitScroll() {
   const controller = new ScrollMagic.Controller();
 
   new ScrollMagic.Scene({
-    duration: "200%",
-    triggerElement: ".concept-logo-container",
-    triggerHook: 0,
+    duration: "30%",
+    triggerElement: ".concept-logo-container, about-pages",
+    triggerHook: 0.5,
   })
-    .setPin(".concept-logo-container")
+
+    .setPin(".concept-logo-container, about-pages")
     .addIndicators()
     .addTo(controller);
 }
