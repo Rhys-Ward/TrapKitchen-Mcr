@@ -1,76 +1,52 @@
 @media screen and (max-width: 576px) {
   .about-container {
     padding: 10vh 2% 2% 2%;
-    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     overflow-x: hidden;
-  }
-  .trap-building {
-    border: 2px solid red;
-    position: absolute;
-    width: 100%;
-    top: 0;
-  }
-  .about-pages {
-    border: 2px solid blue;
-    overflow-y: auto;
-    height: 100vh;
-    position: absolute;
-    top: 35%;
-    z-index: 5;
-  }
-  /* !! about = concept wrapper */
-  .concept-wrapper {
-    /* overflow-y: auto; */
-    position: relative;
-    border: 2px solid red;
-    height: 200vh;
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-  }
-  .concept-wrapper img {
-    height: 250px;
-    /* width: 300px; */
   }
 
-  /* !! title = concept-logo-container */
-  .concept-logo-container {
-    background-color: black;
-    z-index: 2;
+  .about-container img {
+    height: 20vh;
+  }
+  .swiper {
+    width: 100%;
+    height: 30vh;
+  }
+  .swiper-slide {
     border: 2px solid red;
-    /* width: 100%;
-    height: 33.3%; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 !important;
-  }
-  /* !! about-pages = img container  */
-  .about-pages {
-    border: 2px solid green;
-    /* position: absolute; */
     width: 100%;
-    height: 100%;
+    background-position: center;
+    background-size: cover;
   }
-  .about-pages div {
-    height: 33.3%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+  .swiper-slide img {
+    display: block;
+    width: 90%;
   }
-  .about-pages div:nth-child(odd) {
-    background-color: burlywood;
+
+  .swiper-button-prev {
+    color: rgba(255, 255, 255, 0) !important;
+    margin-right: -25px;
   }
-  .about-pages div > p {
-    color: red;
-    width: 80%;
-    font-size: 2.7rem;
+  .swiper-button-next {
+    margin-right: -25px;
+    color: rgba(255, 255, 255, 0) !important;
+  }
+
+  .swiper-pagination {
+    color: white !important;
+  }
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.531) !important;
+    opacity: 1 !important ;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgb(255, 0, 0) !important ;
   }
 }
