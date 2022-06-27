@@ -19,6 +19,11 @@
       type="image/x-icon"
       href="images/logo__1_-removebg-preview.png"
     />
+    <!-- !swiper -->
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
     <!-- ! font style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -238,30 +243,46 @@
           <path id="bottomline" class="s0" d="m695 1160c0 0 392.2-332.8 406-376 13.8-43.2 313.3-14.8 406-44 92.7-29.2 461-362 461-362"/>
         </svg>
         </div> -->
-        <section 
-        class="concept-wrapper">
-        <div class="trap-building-container">
-          <img class="trap-building foreground-1" src="images/trap-building.jpg" alt="trap kitchen building">
-         
-        </div>
-          <header class="concept-logo-container">
-            <img src="images/CONCEPT.png" alt="" class="concept-logo" />
-          </header>
-          <!-- WRAPPER -->
-          <div class="about-pages">
-            <div>
-           <img class="million-pound-menu-show background" src="https://www.hot-dinners.com/images/stories/blog/2018/millionpound/millionmenu.jpg" alt="BBC million pound menu show">
-           
-          </div>
-          <!-- <div class="trap-building-container">
-          <img class="trap-building foreground-1" src="images/trap-building.jpg" alt="trap kitchen building">
-         
-        </div> -->
-        <!-- <div>
-          <img class="trap-phone foreground-1" src="https://media-cdn.tripadvisor.com/media/photo-s/14/71/16/83/snapchat-462832844-largejpg.jpg" alt="trap-phone">
-        </div> -->
-        </div>
-      </section>
+        <header class="concept-logo-container">
+          <img src="images/CONCEPT.png" alt="" class="concept-logo" />
+        </header>
+       
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="trap-building" src="images/trap-building.jpg" alt="trap kitchen building">
+    </div>
+    <div class="swiper-slide"><img class="million-pound-menu-show" src="https://www.hot-dinners.com/images/stories/blog/2018/millionpound/millionmenu.jpg" alt="BBC million pound menu show"></div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+  <div class="swiper-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+
+ 
+  <div class="information-container">
+    <p>This is the kind of place where a knife and fork is about as necessary as that Friends boxset you refuse to throw away, despite having Netflix. Yes, at Trap Kitchen you're going to want to be using your hands. Pick up their heavily buttered corn and show it the respect it deserves, tear the tangy BBQ chicken thighs to pieces with your mitts, and refer to your dominant hand as "the crab claw". After all, who needs a cutlery middle man when you're getting down and dirty with the best affordable XXL lobster tails this city has to offer?</p>
+    <img src="https://infatuation.imgix.net/media/images/reviews/trap-kitchen/GiuliaVerdinelli_TrapKitchen_FoodSpread1.jpg?ar=4%3A3&auto=format&crop=entropy&fit=crop&q=65&w=640&ixlib=react-9.3.0" alt="Food Spread">
+    <p>In the face of all this delicious messy fun, you might be concerned that picking what to eat here will be stressful, but Trap Kitchen is one step ahead with their straightforward menu that comes down to four different platters, ranging from the casual £15 chicken thigh and friends ½-slab deal to the get-gloved-up £40 bucket feast. </p>
+  </div>
+</div>
       <!-- wrapper end  -->
       </article>
         <!-- !MENU -->
@@ -730,9 +751,9 @@
     <!-- scrollmagic  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js" integrity="sha512-RvUydNGlqYJapy0t4AH8hDv/It+zKsv4wOQGb+iOnEfa6NnF2fzjXgRy+FDjSpMfC3sjokNUzsfYZaZ8QAwIxg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="app.js"></script>
-
-    <!-- video -->
+<!--  swiper -->
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<!-- video -->
     <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
 
     <!--AOS Scripts-->
@@ -740,5 +761,7 @@
     <script>
       AOS.init();
     </script>
+  <script src="app.js"></script>
+
   </body>
 </html>

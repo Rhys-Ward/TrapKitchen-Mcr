@@ -307,19 +307,39 @@ const scrollCancel = () => {
 };
 
 // ! CONCEPT PAGE
-function splitScroll() {
-  const controller = new ScrollMagic.Controller();
+// swiper
+const swiper = new Swiper(".swiper", {
+  // direction: "horizontal",
+  // loop: true,
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
+  // effect: "coverflow",
+  // grabCursor: true,
+  // // If we need pagination
+  // pagination: {
+  //   el: ".swiper-pagination",
+  // },
+  // speed: 300,
+  // TouchEventTarget: "wrapper",
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
-  new ScrollMagic.Scene({
-    duration: "30%",
-    triggerElement: ".concept-logo-container, about-pages",
-    triggerHook: 0.5,
-  })
-
-    .setPin(".concept-logo-container, about-pages")
-    .addIndicators()
-    .addTo(controller);
-}
+swiper.slideNext();
 // !all functions called within app
 const app = () => {
   navSlide();
