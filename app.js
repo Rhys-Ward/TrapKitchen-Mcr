@@ -267,14 +267,11 @@ const appearOnScroll1 = new IntersectionObserver(function (
   entries.forEach((entry) => {
     if (!entry.isIntersecting) {
       return;
-      // entry.target.classList.remove("appear");
     } else {
       entry.target.classList.add("appear");
       contactFaders.classList.add("appear1");
       mapFader.classList.add("appear1");
       console.log("hit");
-
-      // appearOnScroll.unobserve(entry.target);
     }
   });
 },
@@ -309,20 +306,11 @@ const scrollCancel = () => {
 // ! CONCEPT PAGE
 // swiper
 const swiper = new Swiper(".swiper", {
-  // direction: "horizontal",
-  // loop: true,
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
-  // effect: "coverflow",
-  // grabCursor: true,
-  // // If we need pagination
-  // pagination: {
-  //   el: ".swiper-pagination",
-  // },
-  // speed: 300,
-  // TouchEventTarget: "wrapper",
+  direction: "horizontal",
+  loop: true,
+  grabCursor: true,
+  speed: 300,
+  TouchEventTarget: "wrapper",
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
@@ -331,8 +319,12 @@ const swiper = new Swiper(".swiper", {
     rotate: 50,
     stretch: 0,
     depth: 100,
-    modifier: 1,
+    modifier: 2,
     slideShadows: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   pagination: {
     el: ".swiper-pagination",
@@ -343,7 +335,7 @@ swiper.slideNext();
 // !all functions called within app
 const app = () => {
   navSlide();
-  // scrollCancel();
-  splitScroll();
+  scrollCancel();
+  // splitScroll();
 };
 app();
