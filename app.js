@@ -366,7 +366,7 @@ conceptFaders.forEach((fader) => {
 // !all functions called within app
 const app = () => {
   navSlide();
-  // scrollCancel();
-  // splitScroll();
+  scrollCancel();
+  splitScroll();
 };
 app();
