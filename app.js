@@ -61,6 +61,7 @@ const options = {
   threshold: 0.2, // between 0-1, 0 being once it hits the page, and 1 being when all the page is in the viewport
   rootMargin: "-0px 0px -30px 0px", // set in px or % only
 };
+// concept
 
 const appearOnScroll = new IntersectionObserver(function (
   entries,
@@ -260,6 +261,14 @@ const appearOptions = {
   threshold: 0.2,
   rootMargin: "0px 0px -30px 0px",
 };
+// // concept
+// const conceptWrapper = document.getElementById("about-container");
+// appearOnScroll1.observe(conceptWrapper);
+// items.forEach((item) => {
+//   appearOnScroll1.observe(item);
+// });
+
+// observer
 const appearOnScroll1 = new IntersectionObserver(function (
   entries,
   appearOnScroll
@@ -332,10 +341,32 @@ const swiper = new Swiper(".swiper", {
 });
 
 swiper.slideNext();
+
+const conceptWrapper = document.getElementById("about-container");
+const conceptFaders = document.getElementById("concept-fade");
+const conceptAppearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      conceptFaders.classList.add("appear");
+    }
+  });
+},
+appearOptions);
+
+appearOnScroll1.observe(contactWrapper);
+conceptFaders.forEach((fader) => {
+  appearOnScroll1.observe(fader);
+});
+
 // !all functions called within app
 const app = () => {
   navSlide();
-  scrollCancel();
+  // scrollCancel();
   // splitScroll();
 };
 app();

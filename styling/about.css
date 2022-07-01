@@ -62,11 +62,31 @@
     justify-content: center;
     align-items: center;
   }
-  .about-text {
-    /* border: 2px solid red; */
+  .intro-text {
+    /* border: 2px solid rgb(145, 255, 0); */
+    font-size: 2.4rem;
+    color: white;
+    line-height: 1.5em;
+    letter-spacing: 1.5px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .span1,
+  .span2 {
     font-size: 1.7rem;
     line-height: 1.6em;
     letter-spacing: 1.5px;
+    margin-bottom: 35px;
+  }
+
+  .span1 {
+    margin-right: 40%;
+  }
+  .span2 {
+    margin-left: 40%;
   }
 
   .food-spread {
@@ -83,6 +103,21 @@
     width: 50%;
   }
   .food-spread2 {
-    margin: 70px 0 0 10px;
+    margin: 40% 0 0 10px;
+  }
+  .span3,
+  .span4 {
+    font-size: 1.7rem;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    margin: 5%;
+  }
+
+  .information-container span {
+    color: red;
+    font-size: 1.7rem;
+    line-height: 1.6em;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
   }
 }
