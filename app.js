@@ -359,9 +359,9 @@ const conceptAppearOnScroll = new IntersectionObserver(function (
 appearOptions);
 
 appearOnScroll1.observe(contactWrapper);
-conceptFaders.forEach((fader) => {
-  appearOnScroll1.observe(fader);
-});
+// conceptFaders.forEach((fader) => {
+//   appearOnScroll1.observe(fader);
+// });
 
 // !all functions called within app
 const app = () => {
